@@ -96,12 +96,12 @@ return (
           <div className="flex justify-center w-full mb-4 md:mb-6">
             <div className="flex items-center justify-center gap-2 w-full max-w-xl rounded-full bg-white/5 border border-white/10 px-5 py-1.5 shadow-lg backdrop-blur-sm">
               {item.badgeIcon}
-              <span className="text-[10px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
+              <span className="text-[11px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
             </div>
           </div>
 
           {/* 2. 메인 제목 */}
-          <h1 className="text-[21px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-tight text-center">
+          <h1 className="text-[22px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-tight text-center">
             {item.titleLine1} <br />
             <span className={`bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent animate-gradient`}>
               {item.titleLine2}

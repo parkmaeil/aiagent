@@ -78,8 +78,8 @@ const HeroBillboard = () => {
   }, [billboardItems.length]);
 
 return (
-    // [수정] 모바일 높이를 140px로 대폭 줄이고, 데스크톱은 220px로 설정
-    <div className="relative w-full overflow-hidden h-[120px] md:h-[200px] flex flex-col items-center">
+    // [수정] 글자가 커진 만큼 모바일 높이를 h-[160px]로 소폭 확보합니다.
+    <div className="relative w-full overflow-hidden h-[160px] md:h-[220px] flex flex-col items-center">
       {billboardItems.map((item, index) => (
         <div
           key={index}
@@ -89,16 +89,16 @@ return (
               : 'opacity-0 translate-y-6 scale-95 pointer-events-none'}
           `}
         >
-          {/* 1. 상단 배지 - 모바일에서 하단 여백을 mb-3으로 축소 */}
+          {/* 1. 상단 배지: 글자 크기를 살짝 키워 밸런스를 맞춥니다. */}
           <div className="flex justify-center w-full mb-3 md:mb-5">
-            <div className="flex items-center justify-center gap-2 w-full max-w-xl rounded-full bg-white/5 border border-white/10 px-4 py-1.5 shadow-lg backdrop-blur-sm">
+            <div className="flex items-center justify-center gap-2 w-full max-w-xl rounded-full bg-white/5 border border-white/10 px-5 py-1.5 shadow-lg backdrop-blur-sm">
               {item.badgeIcon}
-              <span className="text-[10px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
+              <span className="text-[11px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
             </div>
           </div>
 
-          {/* 2. 메인 제목 - 모바일 글자 크기를 22px로 살짝 더 최적화 */}
-          <h1 className="text-[22px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-tight text-center">
+          {/* 2. 메인 제목: 모바일 크기를 [22px]에서 [26px]로 키웠습니다. */}
+          <h1 className="text-[26px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-[1.15] text-center">
             {item.titleLine1} <br />
             <span className={`bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent animate-gradient`}>
               {item.titleLine2}
@@ -107,10 +107,10 @@ return (
         </div>
       ))}
       
-      {/* 인디케이터 - 컨테이너 높이가 줄어들었으므로 텍스트 바로 아래에 붙게 됩니다 */}
-      <div className="absolute bottom-0 flex gap-1.5">
+      {/* 인디케이터 바: 커진 글자 바로 아래에 안정적으로 배치됩니다. */}
+      <div className="absolute bottom-1 flex gap-1.5">
         {billboardItems.map((_, i) => (
-          <div key={i} className={`h-1 rounded-full transition-all duration-500 ${i === currentIndex ? 'w-6 bg-indigo-500' : 'w-1.5 bg-white/10'}`} />
+          <div key={i} className={`h-1 rounded-full transition-all duration-500 ${i === currentIndex ? 'w-8 bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.6)]' : 'w-1.5 bg-white/10'}`} />
         ))}
       </div>
     </div>

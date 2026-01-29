@@ -1237,24 +1237,14 @@ const instructorReviewImages = [
                     </span>{" "}
                     분야를 반영한 실전 커리큘럼을 설계하고 있습니다.
                   </p>
-                  <div className="flex flex-wrap gap-1.5 text-sm">
-                    {["Java", "Spring Boot", "Spring AI", "DB", "MVC", "IoT", "Agent"].map(
-                      (tag) => (
-                        <span
-                          key={tag}
-                          className="px-3 py-1.5 rounded-full bg-slate-900 border border-slate-700 text-slate-300 hover:bg-slate-800/50 hover:border-amber-500/30 transition-all cursor-default"
-                        >
-                          #{tag}
-                        </span>
-                      )
-                    )}
-                  </div>
+                 
+     
                 </div>
               </div>
 
 {/* ===== 여기에 이츠코딩 소개 추가 ===== */}
 {/* COMPACT BRAND SECTION WITH LOGO */}
-<div className="mt-5 mb-3 py-12 border-t border-slate-800/50 text-center">
+<div className="mt-2 mb-2 py-12 border-t border-slate-800/50 text-center">
   <div className="space-y-10">
     
     {/* 1. 기본 로고 아이콘 */}

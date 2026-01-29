@@ -1253,25 +1253,73 @@ const instructorReviewImages = [
               </div>
 
 {/* ===== 여기에 이츠코딩 소개 추가 ===== */}
-        <div className="mt-10 mb-5 pt-3 border-t border-slate-800/50">
-          <div className="group relative rounded-3xl bg-gradient-to-br from-slate-950/95 via-amber-950/30 border-2 border-amber-500/40 p-8 shadow-2xl hover:shadow-amber-500/30 hover:scale-102 transition-all">
-            <div className="text-center space-y-6">
-              <div className="inline-flex items-center gap-2 mx-auto rounded-full bg-gradient-to-r from-amber-500/20  px-5 py-2">
-              <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-violet-600 flex items-center justify-center shadow-lg shadow-fuchsia-500/25">
-              <Code2 className="w-4 h-4 text-white" />
-            </div>
-                <span className="font-bold text-white text-amber-200">IT'S CODING</span>
-              </div>
-              <h3 className="text-1xl md:text-2xl font-black text-slate-100">
-                영향력있는 개발자가 세상을 바꾼다
-              </h3>
-             
-              <p className="text-base text-slate-300 max-w-lg mx-auto">
-                '이것이 코딩이다'라는 케치프레이즈 아래, IT'S CODING은 모든 사람이 코딩을 통해 자신의 무한한 잠재력을 발견하고, 기술 혁신의 주역이 될 수 있도록 영감을 주는 교육 플랫폼입니다. 여러분도 코딩으로 세상을 바꿀 수 있습니다.
-              </p>             
-            </div>
+{/* BRAND PHILOSOPHY SECTION - 정제된 브랜드 전용 버전 */}
+<div className="mt-16 mb-10 pt-8 border-t border-slate-800/50">
+  <div className="group relative rounded-[2.5rem] bg-gradient-to-br from-slate-950/95 via-[#00c897]/5 to-slate-950/95 border-2 border-[#00c897]/20 p-8 md:p-12 shadow-[0_0_50px_rgba(0,200,151,0.05)] transition-all duration-500">
+    
+    <div className="text-center space-y-12">
+      {/* 브랜드 로고 영역 */}
+      <div className="flex flex-col items-center gap-4">
+        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform group-hover:rotate-12 duration-500">
+          <Code2 className="w-8 h-8 text-[#050816]" />
+        </div>
+        <div className="space-y-1">
+          <h2 className="text-2xl font-black tracking-widest text-[#00c897]">IT'S CODING</h2>
+          <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.4em]">The Architecture of Influence</p>
+        </div>
+      </div>
+
+      {/* 메인 슬로건 */}
+      <div className="space-y-4">
+        <h3 className="text-2xl md:text-4xl font-black text-slate-50 tracking-tight leading-tight">
+          영향력 있는 개발자가 <br className="md:hidden" />
+          <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+            세상을 바꾼다
+          </span>
+        </h3>
+      </div>
+
+      {/* 브랜드 기호별 의미 (본질 / 지능 / 성장) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
+        {/* 1. < (本質, Opening) */}
+        <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-[#00c897]/40 transition-all group/card overflow-hidden">
+          <div className="absolute -top-6 -left-2 text-7xl font-black text-[#00c897]/10 group-hover/card:text-[#00c897]/20 transition-colors">&lt;</div>
+          <div className="relative z-10">
+            <div className="text-[#00c897] font-black text-xl mb-3">본질 <span className="text-slate-500 text-sm font-normal ml-2">Opening</span></div>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              모든 변화의 시작은 본질에 대한 탐구에서 비롯됩니다. <br/>
+              <strong>복잡함을 걷어내고 가장 순수한 핵심</strong>을 마주할 때, 위대한 기술의 문이 열립니다.
+            </p>
           </div>
         </div>
+
+        {/* 2. / (知能, Intelligence) */}
+        <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-[#00c897]/30 shadow-[0_0_30px_rgba(0,200,151,0.05)] group/card overflow-hidden">
+          <div className="absolute -top-6 -left-2 text-7xl font-black text-[#00c897]/10">/</div>
+          <div className="relative z-10">
+            <div className="text-[#00c897] font-black text-xl mb-3">지능 <span className="text-slate-500 text-sm font-normal ml-2">Intelligence</span></div>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              기술은 인간의 사고를 확장하는 가장 논리적인 도구입니다. <br/>
+              <strong>고도화된 지능으로 한계를 극복</strong>하고, 문제를 해결하는 최적의 경로를 설계합니다.
+            </p>
+          </div>
+        </div>
+
+        {/* 3. > (成長, Growth) */}
+        <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-[#00c897]/40 transition-all group/card overflow-hidden">
+          <div className="absolute -top-6 -left-2 text-7xl font-black text-[#00c897]/10 group-hover/card:text-[#00c897]/20 transition-colors">&gt;</div>
+          <div className="relative z-10">
+            <div className="text-[#00c897] font-black text-xl mb-3">성장 <span className="text-slate-500 text-sm font-normal ml-2">Growth</span></div>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              완성은 끝이 아닌, 더 넓은 세계로 나아가는 증명입니다. <br/>
+              <strong>끊임없는 성장을 통해 세상에 선한 영향력</strong>을 전달하는 가치를 실현합니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
               {/* 경력 아코디언 */}
               <div className="mb-6">

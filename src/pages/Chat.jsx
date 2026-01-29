@@ -462,7 +462,7 @@ const instructorReviewImages = [
               <Code2 className="w-4 h-4 text-white" />
             </div>
             <div>
-              <div className="text-sm font-bold tracking-tight text-slate-100">
+              <div className="text-sm font-bold tracking-tight text-[#00c897]">
                 IT&apos;S CODING
               </div>
               <div className="text-[11px] text-slate-500 font-semibold tracking-[0.2em] uppercase">

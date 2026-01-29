@@ -473,7 +473,7 @@ const instructorReviewImages = [
       </p>
 
       {/* 5. CTA 버튼: justify-center 추가 */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full justify-center">
+      <div className="flex flex-col sm:flex-row gap-4 mb-5 w-full justify-center">
         <a
           href="https://forms.gle/t7bKt7AQXpP9aoSp7"
           target="_blank"

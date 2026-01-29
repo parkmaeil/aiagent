@@ -116,7 +116,7 @@ return (
       ))}
       
       {/* 인디케이터 바: 텍스트가 길어진 만큼 아래쪽 여백을 조금 더 줍니다. */}
-      <div className="absolute bottom-0 flex gap-1.5">
+      <div className="absolute bottom-3 flex gap-1.5">
         {billboardItems.map((_, i) => (
           <div key={i} className={`h-1 rounded-full transition-all duration-500 ${i === currentIndex ? 'w-8 bg-indigo-500' : 'w-1.5 bg-white/10'}`} />
         ))}

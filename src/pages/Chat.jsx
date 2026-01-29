@@ -50,7 +50,7 @@ const HeroBillboard = () => {
     {
       badge: "국비 6개월 과정을 5주로 압축한 비대면 부트캠프",
       badgeIcon: <Flame className="w-4 h-4 text-rose-400 animate-pulse" />,
-      titleLine1: "1️⃣5주 만에 완성하는",
+      titleLine1: "1️⃣ 5주 만에 완성하는",
       titleLine2: "AI 에이전트 부트캠프",
       titleLine3: "Spring AI와 MCP로 구축하는 현업 수준의 지능형 시스템", // 추가된 세부 설명
       gradient: "from-fuchsia-400 via-violet-400 to-cyan-400"
@@ -58,7 +58,7 @@ const HeroBillboard = () => {
     {
       badge: "현업 실무형 Multi-Agent 오케스트레이션",
       badgeIcon: <Sparkles className="w-4 h-4 text-amber-400" />,
-      titleLine1: "2️⃣Spring AI로 구축하는",
+      titleLine1: "2️⃣ Spring AI로 구축하는",
       titleLine2: "지능형 에이전트 시스템",
       titleLine3: "복잡한 비즈니스 로직을 스스로 해결하는 멀티 에이전트 설계",
       gradient: "from-emerald-400 via-teal-400 to-cyan-400"
@@ -66,7 +66,7 @@ const HeroBillboard = () => {
     {
       badge: "Anthropic MCP 프로토콜 완벽 가이드",
       badgeIcon: <Rocket className="w-4 h-4 text-blue-400" />,
-      titleLine1: "3️⃣차세대 AI 표준",
+      titleLine1: "3️⃣ 차세대 AI 표준",
       titleLine2: "MCP 마스터 클래스",
       titleLine3: "모든 AI 도구를 하나로 연결하는 새로운 인터페이스 표준 학습",
       gradient: "from-blue-400 via-indigo-400 to-violet-400"

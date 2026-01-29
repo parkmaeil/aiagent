@@ -1245,7 +1245,7 @@ const instructorReviewImages = [
 {/* ===== 여기에 이츠코딩 소개 추가 ===== */}
 {/* COMPACT BRAND SECTION WITH LOGO */}
 <div className="mt-2 mb-2 py-5 border-t border-slate-800/50 text-center">
-  <div className="space-y-10">
+  <div className="space-y-5">
     
     {/* 1. 기본 로고 아이콘 */}
     <div className="flex flex-col items-center gap-3">

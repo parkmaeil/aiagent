@@ -458,9 +458,9 @@ const instructorReviewImages = [
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-fuchsia-500 to-violet-600 flex items-center justify-center shadow-lg shadow-fuchsia-500/25">
-              <Code2 className="w-4 h-4 text-white" />
-            </div>
+<div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform hover:rotate-12">
+  <Code2 className="w-4 h-4 text-[#050816]" /> {/* 아이콘을 배경색과 대비되는 어두운색으로 설정 */}
+</div>
             <div>
               <div className="text-sm font-bold tracking-tight text-[#00c897]">
                 IT&apos;S CODING

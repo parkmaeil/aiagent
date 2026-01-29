@@ -1253,69 +1253,58 @@ const instructorReviewImages = [
               </div>
 
 {/* ===== 여기에 이츠코딩 소개 추가 ===== */}
-{/* BRAND PHILOSOPHY SECTION - 정제된 브랜드 전용 버전 */}
-<div className="mt-16 mb-10 pt-8 border-t border-slate-800/50">
-  <div className="group relative rounded-[2.5rem] bg-gradient-to-br from-slate-950/95 via-[#00c897]/5 to-slate-950/95 border-2 border-[#00c897]/20 p-8 md:p-12 shadow-[0_0_50px_rgba(0,200,151,0.05)] transition-all duration-500">
+{/* COMPACT BRAND SECTION WITH LOGO */}
+<div className="mt-5 mb-3 py-12 border-t border-slate-800/50 text-center">
+  <div className="space-y-10">
     
-    <div className="text-center space-y-12">
-      {/* 브랜드 로고 영역 */}
-      <div className="flex flex-col items-center gap-4">
-        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform group-hover:rotate-12 duration-500">
-          <Code2 className="w-8 h-8 text-[#050816]" />
-        </div>
-        <div className="space-y-1">
-          <h2 className="text-2xl font-black tracking-widest text-[#00c897]">IT'S CODING</h2>
-          <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.4em]">The Architecture of Influence</p>
-        </div>
+    {/* 1. 기본 로고 아이콘 */}
+    <div className="flex flex-col items-center gap-3">
+      <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform hover:rotate-12 duration-500">
+        <Code2 className="w-6 h-6 text-[#050816]" />
+      </div>
+      <div className="text-[10px] text-[#00c897] font-black tracking-[0.4em] uppercase">IT'S CODING</div>
+    </div>
+
+    {/* 2. 메인 슬로건 */}
+    <div className="space-y-4">
+      <h3 className="text-2xl md:text-4xl font-black text-slate-50 tracking-tight leading-tight">
+        영향력 있는 개발자가 <br className="md:hidden" />
+        <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+          세상을 바꾼다
+        </span>
+      </h3>
+      
+      <p className="text-sm md:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed px-4">
+        코딩은 단순한 기술이 아니라 세상을 바꾸는 가장 강력한 언어입니다. <br className="hidden md:block" />
+        IT'S CODING은 그 언어에 AI라는 지능을 더해 당신의 영향력을 완성합니다.
+      </p>
+    </div>
+
+    {/* 3. 핵심 가치 필로소피 바 (Philosophy Bar) */}
+    <div className="inline-flex items-center justify-center gap-3 md:gap-8 px-8 py-4 rounded-[2rem] bg-white/[0.03] border border-white/5 shadow-inner">
+      {/* 본질 */}
+      <div className="flex items-center gap-2 group/val">
+        <span className="text-[#00c897] font-black text-lg md:text-xl">&lt;</span>
+        <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">본질</span>
+        <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Opening</span>
       </div>
 
-      {/* 메인 슬로건 */}
-      <div className="space-y-4">
-        <h3 className="text-2xl md:text-4xl font-black text-slate-50 tracking-tight leading-tight">
-          영향력 있는 개발자가 <br className="md:hidden" />
-          <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
-            세상을 바꾼다
-          </span>
-        </h3>
+      <div className="text-slate-800 font-thin text-xl">|</div>
+
+      {/* 지능 */}
+      <div className="flex items-center gap-2 group/val">
+        <span className="text-[#00c897] font-black text-lg md:text-xl">/</span>
+        <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">지능</span>
+        <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Intelligence</span>
       </div>
 
-      {/* 브랜드 기호별 의미 (본질 / 지능 / 성장) */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4 text-left">
-        {/* 1. < (本質, Opening) */}
-        <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-[#00c897]/40 transition-all group/card overflow-hidden">
-          <div className="absolute -top-6 -left-2 text-7xl font-black text-[#00c897]/10 group-hover/card:text-[#00c897]/20 transition-colors">&lt;</div>
-          <div className="relative z-10">
-            <div className="text-[#00c897] font-black text-xl mb-3">본질 <span className="text-slate-500 text-sm font-normal ml-2">Opening</span></div>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              모든 변화의 시작은 본질에 대한 탐구에서 비롯됩니다. <br/>
-              <strong>복잡함을 걷어내고 가장 순수한 핵심</strong>을 마주할 때, 위대한 기술의 문이 열립니다.
-            </p>
-          </div>
-        </div>
+      <div className="text-slate-800 font-thin text-xl">|</div>
 
-        {/* 2. / (知能, Intelligence) */}
-        <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-[#00c897]/30 shadow-[0_0_30px_rgba(0,200,151,0.05)] group/card overflow-hidden">
-          <div className="absolute -top-6 -left-2 text-7xl font-black text-[#00c897]/10">/</div>
-          <div className="relative z-10">
-            <div className="text-[#00c897] font-black text-xl mb-3">지능 <span className="text-slate-500 text-sm font-normal ml-2">Intelligence</span></div>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              기술은 인간의 사고를 확장하는 가장 논리적인 도구입니다. <br/>
-              <strong>고도화된 지능으로 한계를 극복</strong>하고, 문제를 해결하는 최적의 경로를 설계합니다.
-            </p>
-          </div>
-        </div>
-
-        {/* 3. > (成長, Growth) */}
-        <div className="relative p-8 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-[#00c897]/40 transition-all group/card overflow-hidden">
-          <div className="absolute -top-6 -left-2 text-7xl font-black text-[#00c897]/10 group-hover/card:text-[#00c897]/20 transition-colors">&gt;</div>
-          <div className="relative z-10">
-            <div className="text-[#00c897] font-black text-xl mb-3">성장 <span className="text-slate-500 text-sm font-normal ml-2">Growth</span></div>
-            <p className="text-sm text-slate-400 leading-relaxed">
-              완성은 끝이 아닌, 더 넓은 세계로 나아가는 증명입니다. <br/>
-              <strong>끊임없는 성장을 통해 세상에 선한 영향력</strong>을 전달하는 가치를 실현합니다.
-            </p>
-          </div>
-        </div>
+      {/* 성장 */}
+      <div className="flex items-center gap-2 group/val">
+        <span className="text-[#00c897] font-black text-lg md:text-xl">&gt;</span>
+        <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">성장</span>
+        <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Growth</span>
       </div>
     </div>
   </div>

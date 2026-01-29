@@ -42,6 +42,81 @@ import {
 
 const KAKAO_CHANNEL_URL = "https://pf.kakao.com/_xccHmG";
 
+// 2. 캐러셀 컴포넌트를 만듭니다.
+const HeroBillboard = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const billboardItems = [
+    {
+      badge: "국비 6개월 과정을 5주로 압축한 비대면 부트캠프",
+      badgeIcon: <Flame className="w-4 h-4 text-rose-400 animate-pulse" />,
+      titleLine1: "5주 만에 완성하는",
+      titleLine2: "AI 에이전트 부트캠프",
+      gradient: "from-fuchsia-400 via-violet-400 to-cyan-400"
+    },
+    {
+      badge: "현업 실무형 Multi-Agent 오케스트레이션",
+      badgeIcon: <Sparkles className="w-4 h-4 text-amber-400" />,
+      titleLine1: "Spring AI로 구축하는",
+      titleLine2: "지능형 에이전트 시스템",
+      gradient: "from-emerald-400 via-teal-400 to-cyan-400"
+    },
+    {
+      badge: "Anthropic MCP 프로토콜 완벽 가이드",
+      badgeIcon: <Rocket className="w-4 h-4 text-blue-400" />,
+      titleLine1: "차세대 AI 표준",
+      titleLine2: "MCP 마스터 클래스",
+      gradient: "from-blue-400 via-indigo-400 to-violet-400"
+    }
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % billboardItems.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [billboardItems.length]);
+
+return (
+    // [수정] 모바일 높이를 140px로 대폭 줄이고, 데스크톱은 220px로 설정
+    <div className="relative w-full overflow-hidden h-[120px] md:h-[200px] flex flex-col items-center">
+      {billboardItems.map((item, index) => (
+        <div
+          key={index}
+          className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out flex flex-col items-center
+            ${index === currentIndex 
+              ? 'opacity-100 translate-y-0 scale-100' 
+              : 'opacity-0 translate-y-6 scale-95 pointer-events-none'}
+          `}
+        >
+          {/* 1. 상단 배지 - 모바일에서 하단 여백을 mb-3으로 축소 */}
+          <div className="flex justify-center w-full mb-3 md:mb-5">
+            <div className="flex items-center justify-center gap-2 w-full max-w-xl rounded-full bg-white/5 border border-white/10 px-4 py-1.5 shadow-lg backdrop-blur-sm">
+              {item.badgeIcon}
+              <span className="text-[10px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
+            </div>
+          </div>
+
+          {/* 2. 메인 제목 - 모바일 글자 크기를 22px로 살짝 더 최적화 */}
+          <h1 className="text-[22px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-tight text-center">
+            {item.titleLine1} <br />
+            <span className={`bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent animate-gradient`}>
+              {item.titleLine2}
+            </span>
+          </h1>
+        </div>
+      ))}
+      
+      {/* 인디케이터 - 컨테이너 높이가 줄어들었으므로 텍스트 바로 아래에 붙게 됩니다 */}
+      <div className="absolute bottom-0 flex gap-1.5">
+        {billboardItems.map((_, i) => (
+          <div key={i} className={`h-1 rounded-full transition-all duration-500 ${i === currentIndex ? 'w-6 bg-indigo-500' : 'w-1.5 bg-white/10'}`} />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const ItsCodingOfficial = () => {
   const [scrollY, setScrollY] = useState(0);
   const [showCareers, setShowCareers] = useState(false);
@@ -436,24 +511,8 @@ const instructorReviewImages = [
     {/* 왼쪽 콘텐츠 영역: flex flex-col items-center를 추가하여 모든 요소를 중앙으로 정렬 */}
     <div className="flex flex-col items-center lg:items-center animate-fadeIn text-center">
       
-      {/* 1. 상단 배지 (기존 유지) */}
-      <div className="flex justify-center w-full mb-6">
-        <div className="flex items-center justify-center gap-2 w-full max-w-2xl rounded-full bg-gradient-to-r from-rose-500/20 via-fuchsia-500/20 to-violet-500/20 border border-rose-500/30 px-6 py-2 shadow-lg shadow-rose-500/10">
-          <Flame className="w-4 h-4 text-rose-400 animate-pulse" />
-          <span className="text-[12px] md:text-sm font-semibold text-slate-200">
-            국비 6개월 과정을 5주로 압축한 비대면 부트캠프
-          </span>
-        </div>
-      </div>
-
-      {/* 2. 메인 제목 */}
-      <h1 className="text-[28px] md:text-5xl lg:text-6xl font-black tracking-tight text-slate-50 mb-6 leading-tight">
-        5주 만에 완성하는
-        <br />
-        <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
-          AI 에이전트 부트캠프
-        </span>
-      </h1>
+   {/* === 이 부분이 핵심입니다: 기존 1, 2번 자리에 컴포넌트 삽입 === */}
+      <HeroBillboard />
 
       {/* 3. 말풍선 서브 타이틀: 정렬 수정 */}
       <div className="mb-4 relative inline-block group mx-auto">

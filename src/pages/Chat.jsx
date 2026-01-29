@@ -79,7 +79,7 @@ const HeroBillboard = () => {
 
 return (
     // [수정] 글자가 커진 만큼 모바일 높이를 h-[160px]로 소폭 확보합니다.
-    <div className="relative w-full overflow-hidden h-[160px] md:h-[220px] flex flex-col items-center">
+    <div className="relative w-full overflow-hidden h-[140px] md:h-[210px] flex flex-col items-center">
       {billboardItems.map((item, index) => (
         <div
           key={index}

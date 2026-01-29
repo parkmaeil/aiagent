@@ -82,7 +82,7 @@ const HeroBillboard = () => {
 
 return (
     // [수정] 세 줄이 되었으므로 높이를 h-[200px] md:h-[280px]로 넉넉하게 늘려줍니다.
-    <div className="relative w-full overflow-hidden h-[180px] md:h-[250px] flex flex-col items-center">
+    <div className="relative w-full overflow-hidden h-[170px] md:h-[250px] flex flex-col items-center">
       {billboardItems.map((item, index) => (
         <div
           key={index}

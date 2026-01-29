@@ -50,22 +50,25 @@ const HeroBillboard = () => {
     {
       badge: "국비 6개월 과정을 5주로 압축한 비대면 부트캠프",
       badgeIcon: <Flame className="w-4 h-4 text-rose-400 animate-pulse" />,
-      titleLine1: "5주 만에 완성하는",
+      titleLine1: "1️⃣5주 만에 완성하는",
       titleLine2: "AI 에이전트 부트캠프",
+      titleLine3: "Spring AI와 MCP로 구축하는 현업 수준의 지능형 시스템", // 추가된 세부 설명
       gradient: "from-fuchsia-400 via-violet-400 to-cyan-400"
     },
     {
       badge: "현업 실무형 Multi-Agent 오케스트레이션",
       badgeIcon: <Sparkles className="w-4 h-4 text-amber-400" />,
-      titleLine1: "Spring AI로 구축하는",
+      titleLine1: "2️⃣Spring AI로 구축하는",
       titleLine2: "지능형 에이전트 시스템",
+      titleLine3: "복잡한 비즈니스 로직을 스스로 해결하는 멀티 에이전트 설계",
       gradient: "from-emerald-400 via-teal-400 to-cyan-400"
     },
     {
       badge: "Anthropic MCP 프로토콜 완벽 가이드",
       badgeIcon: <Rocket className="w-4 h-4 text-blue-400" />,
-      titleLine1: "차세대 AI 표준",
+      titleLine1: "3️⃣차세대 AI 표준",
       titleLine2: "MCP 마스터 클래스",
+      titleLine3: "모든 AI 도구를 하나로 연결하는 새로운 인터페이스 표준 학습",
       gradient: "from-blue-400 via-indigo-400 to-violet-400"
     }
   ];
@@ -78,39 +81,44 @@ const HeroBillboard = () => {
   }, [billboardItems.length]);
 
 return (
-    // [수정] 글자가 커진 만큼 모바일 높이를 h-[160px]로 소폭 확보합니다.
-    <div className="relative w-full overflow-hidden h-[140px] md:h-[210px] flex flex-col items-center">
+    // [수정] 세 줄이 되었으므로 높이를 h-[200px] md:h-[280px]로 넉넉하게 늘려줍니다.
+    <div className="relative w-full overflow-hidden h-[180px] md:h-[250px] flex flex-col items-center">
       {billboardItems.map((item, index) => (
         <div
           key={index}
           className={`absolute inset-0 w-full transition-all duration-1000 ease-in-out flex flex-col items-center
             ${index === currentIndex 
               ? 'opacity-100 translate-y-0 scale-100' 
-              : 'opacity-0 translate-y-6 scale-95 pointer-events-none'}
+              : 'opacity-0 translate-y-8 scale-95 pointer-events-none'}
           `}
         >
-          {/* 1. 상단 배지: 글자 크기를 살짝 키워 밸런스를 맞춥니다. */}
-          <div className="flex justify-center w-full mb-3 md:mb-5">
+          {/* 1. 상단 배지 */}
+          <div className="flex justify-center w-full mb-4 md:mb-6">
             <div className="flex items-center justify-center gap-2 w-full max-w-xl rounded-full bg-white/5 border border-white/10 px-5 py-1.5 shadow-lg backdrop-blur-sm">
               {item.badgeIcon}
-              <span className="text-[11px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
+              <span className="text-[10px] md:text-xs font-semibold text-slate-200">{item.badge}</span>
             </div>
           </div>
 
-          {/* 2. 메인 제목: 모바일 크기를 [22px]에서 [26px]로 키웠습니다. */}
-          <h1 className="text-[26px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-[1.15] text-center">
+          {/* 2. 메인 제목 */}
+          <h1 className="text-[24px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-50 leading-tight text-center">
             {item.titleLine1} <br />
             <span className={`bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent animate-gradient`}>
               {item.titleLine2}
             </span>
           </h1>
+
+          {/* 3. [NEW] 세부 설명 라인 */}
+          <p className="mt-3 md:mt-5 text-[13px] md:text-base text-slate-400 font-medium max-w-md md:max-w-xl mx-auto leading-relaxed">
+            {item.titleLine3}
+          </p>
         </div>
       ))}
       
-      {/* 인디케이터 바: 커진 글자 바로 아래에 안정적으로 배치됩니다. */}
-      <div className="absolute bottom-1 flex gap-1.5">
+      {/* 인디케이터 바: 텍스트가 길어진 만큼 아래쪽 여백을 조금 더 줍니다. */}
+      <div className="absolute bottom-0 flex gap-1.5">
         {billboardItems.map((_, i) => (
-          <div key={i} className={`h-1 rounded-full transition-all duration-500 ${i === currentIndex ? 'w-8 bg-indigo-500 shadow-[0_0_8px_rgba(99,102,241,0.6)]' : 'w-1.5 bg-white/10'}`} />
+          <div key={i} className={`h-1 rounded-full transition-all duration-500 ${i === currentIndex ? 'w-8 bg-indigo-500' : 'w-1.5 bg-white/10'}`} />
         ))}
       </div>
     </div>
@@ -525,7 +533,7 @@ const instructorReviewImages = [
 
       {/* 4. 설명 문구: mx-auto와 text-center 적용 */}
       <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-8 leading-relaxed mx-auto">
-        Spring AI · MCP · RAG · Multi-Agent까지, 현업 중심 커리큘럼으로
+        Spring AI · RAG · Tool Calling · MCP · Multi-Agent까지, 현업 중심 커리큘럼으로
         <br className="hidden md:block" />
         <span className="text-slate-100 font-semibold"> 나만의 AI 에이전트 시스템 </span>
         을 처음부터 배포까지 경험합니다.

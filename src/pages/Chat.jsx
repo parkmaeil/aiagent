@@ -1761,7 +1761,7 @@ const instructorReviewImages = [
               <Code2 className="w-4 h-4 text-white" />
             </div>
             <span className="text-base md:text-lg font-black text-slate-50">
-              IT&apos;S CODING(이츠코딩)
+              이츠코딩
             </span>
           </div>
 

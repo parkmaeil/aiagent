@@ -421,95 +421,95 @@ const instructorReviewImages = [
 
       <main className="pt-20">
         {/* HERO - 애니메이션 배경 추가 */}
-        <section className="relative px-6 pt-16 pb-20 overflow-hidden">
-          {/* 애니메이션 배경 */}
-          <div className="absolute inset-0 overflow-hidden">
-            <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-3xl animate-pulse" />
-            <div className="absolute -bottom-40 right-10 h-80 w-80 rounded-full bg-cyan-500/15 blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
-            <div className="absolute top-1/2 left-10 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
-          </div>
-
-          {/* Grid Pattern Overlay */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
-          <div className="relative mx-auto max-w-6xl grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-center">
-            <div className="animate-fadeIn">
-              <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-500/20 via-fuchsia-500/20 to-violet-500/20 border border-rose-500/30 px-4 py-2 shadow-lg shadow-rose-500/10">
-                <Flame className="w-4 h-4 text-rose-400 animate-pulse" />
-                <span className="text-[12px] font-semibold text-slate-200">
-                  국비 6개월 과정을 5주로 압축한 비대면 부트캠프
-                </span>
-              </div>
-
-              <h1 className="text-[28px] md:text-5xl lg:text-6xl font-black tracking-tight text-slate-50 mb-4 text-center lg:text-center leading-tight">
-               5주 만에 완성하는
-                <br />
-                <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
-               AI 에이전트 부트캠프
-                </span>
-              </h1>
-              {/* Sub Title - Kakao Style Speech Bubble */}
-            <div className="mb-2 relative inline-block group">
-             <div className="relative z-10 bg-slate-950/50 backdrop-blur-md border border-indigo-500/30 text-indigo-100 text-center px-8 py-3.5 rounded-[2rem] font-bold text-base md:text-xl shadow-2xl">
-              <span className="text-cyan-400">나도!</span> 스프링으로 인공지능을 할 수 있다
-            </div>
-            {/* 말풍선 꼬리 (아래쪽 삼각형) */}
-          <div className="absolute left-10 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-indigo-500/30 rotate-45 z-0" />
-              <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-4 leading-relaxed mt-2">
-                Spring AI · MCP · RAG · Multi-Agent까지, 현업 중심 커리큘럼으로
-                <span className="text-slate-100 font-semibold">
-                  {" "}
-                  나만의 AI 에이전트 시스템
-                </span>
-                을 처음부터 배포까지 경험합니다.
-              </p>  
-            </div> 
-     {/* 4. CTA 버튼: 신청 버튼은 강렬하게, 상담 버튼은 신뢰감 있게 배치 */}
-  <div className="flex flex-col sm:flex-row gap-4 mb-3">
-    <a
-      href="https://forms.gle/t7bKt7AQXpP9aoSp7"
-      target="_blank"
-      rel="noreferrer"
-      className="group flex items-center justify-center gap-3 rounded-2xl bg-indigo-600 text-white px-10 py-4 text-base font-black shadow-xl shadow-indigo-500/20 hover:bg-indigo-500 hover:-translate-y-1 transition-all duration-300"
-    >
-      얼리버드 40% 신청하기
-      <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-    </a>
-    <a
-      href={KAKAO_CHANNEL_URL}
-      target="_blank"
-      rel="noreferrer"
-      className="flex items-center justify-center gap-3 rounded-2xl bg-white/5 border border-white/10 text-slate-300 px-10 py-4 text-base font-bold hover:bg-white/10 transition-all duration-300"
-    >
-      <MessageCircle className="w-5 h-5 text-[#FEE500]" />
-      카카오톡 실시간 상담
-    </a>
+{/* HERO - 왼쪽 정렬 최적화 버전 */}
+<section className="relative px-6 pt-16 pb-20 overflow-hidden">
+  {/* 애니메이션 배경 및 그리드 패턴 (기존과 동일) */}
+  <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-3xl animate-pulse" />
+    <div className="absolute -bottom-40 right-10 h-80 w-80 rounded-full bg-cyan-500/15 blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+    <div className="absolute top-1/2 left-10 h-72 w-72 rounded-full bg-violet-500/10 blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
   </div>
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
 
-              <div className="flex flex-wrap items-center gap-4 text-[12px] text-slate-500">
-                <div className="flex items-center gap-1.5">
-                  <Clock className="w-3 h-3 text-rose-400" />
-                  <span>
-                    <span className="text-slate-100 font-semibold">5주</span>{" "}
-                    집중 부트캠프
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <Users className="w-3 h-3 text-violet-400" />
-                  <span>
-                    선착순{" "}
-                    <span className="text-slate-100 font-semibold">20명</span>{" "}
-                    소수정예
-                  </span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <Star className="w-3 h-3 text-amber-400" />
-                  <span>
-                    수강생 만족도{" "}
-                    <span className="text-slate-100 font-semibold">98%</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+  <div className="relative mx-auto max-w-6xl grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-center">
+    
+    {/* 왼쪽 콘텐츠 영역: flex flex-col items-center를 추가하여 모든 요소를 중앙으로 정렬 */}
+    <div className="flex flex-col items-center lg:items-center animate-fadeIn text-center">
+      
+      {/* 1. 상단 배지 (기존 유지) */}
+      <div className="flex justify-center w-full mb-6">
+        <div className="flex items-center justify-center gap-2 w-full max-w-2xl rounded-full bg-gradient-to-r from-rose-500/20 via-fuchsia-500/20 to-violet-500/20 border border-rose-500/30 px-6 py-2 shadow-lg shadow-rose-500/10">
+          <Flame className="w-4 h-4 text-rose-400 animate-pulse" />
+          <span className="text-[12px] md:text-sm font-semibold text-slate-200">
+            국비 6개월 과정을 5주로 압축한 비대면 부트캠프
+          </span>
+        </div>
+      </div>
+
+      {/* 2. 메인 제목 */}
+      <h1 className="text-[28px] md:text-5xl lg:text-6xl font-black tracking-tight text-slate-50 mb-6 leading-tight">
+        5주 만에 완성하는
+        <br />
+        <span className="bg-gradient-to-r from-fuchsia-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent animate-gradient">
+          AI 에이전트 부트캠프
+        </span>
+      </h1>
+
+      {/* 3. 말풍선 서브 타이틀: 정렬 수정 */}
+      <div className="mb-4 relative inline-block group mx-auto">
+        <div className="relative z-10 bg-slate-950/50 backdrop-blur-md border border-indigo-500/30 text-indigo-100 px-8 py-3.5 rounded-[2rem] font-bold text-base md:text-xl shadow-2xl">
+          <span className="text-cyan-400">나도!</span> 스프링으로 인공지능을 할 수 있다
+        </div>
+        {/* 말풍선 꼬리 위치를 중앙으로 조정 */}
+        <div className="absolute left-1/2 -translate-x-1/2 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-indigo-500/30 rotate-45 z-0" />
+      </div>
+
+      {/* 4. 설명 문구: mx-auto와 text-center 적용 */}
+      <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-8 leading-relaxed mx-auto">
+        Spring AI · MCP · RAG · Multi-Agent까지, 현업 중심 커리큘럼으로
+        <br className="hidden md:block" />
+        <span className="text-slate-100 font-semibold"> 나만의 AI 에이전트 시스템 </span>
+        을 처음부터 배포까지 경험합니다.
+      </p>
+
+      {/* 5. CTA 버튼: justify-center 추가 */}
+      <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full justify-center">
+        <a
+          href="https://forms.gle/t7bKt7AQXpP9aoSp7"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex items-center justify-center gap-3 rounded-2xl bg-indigo-600 text-white px-10 py-4 text-base font-black shadow-xl shadow-indigo-500/20 hover:bg-indigo-500 hover:-translate-y-1 transition-all duration-300"
+        >
+          얼리버드 40% 신청하기
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        </a>
+        <a
+          href={KAKAO_CHANNEL_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center justify-center gap-3 rounded-2xl bg-white/5 border border-white/10 text-slate-300 px-10 py-4 text-base font-bold hover:bg-white/10 transition-all duration-300"
+        >
+          <MessageCircle className="w-5 h-5 text-[#FEE500]" />
+          카카오톡 실시간 상담
+        </a>
+      </div>
+
+      {/* 6. 하단 통계 태그: justify-center 추가 */}
+      <div className="flex flex-wrap items-center justify-center gap-6 text-[12px] text-slate-500">
+        <div className="flex items-center gap-1.5">
+          <Clock className="w-3 h-3 text-rose-400" />
+          <span><span className="text-slate-100 font-semibold">5주</span> 집중 부트캠프</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <Users className="w-3 h-3 text-violet-400" />
+          <span>선착순 <span className="text-slate-100 font-semibold">20명</span> 소수정예</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <Star className="w-3 h-3 text-amber-400" />
+          <span>수강생 만족도 <span className="text-slate-100 font-semibold">98%</span></span>
+        </div>
+      </div>
+    </div>
 
             {/* 오른쪽: 일정/카운트다운 카드 */}
             <div className="relative animate-fadeIn" style={{animationDelay: '0.2s'}}>

@@ -505,7 +505,7 @@ const instructorReviewImages = [
       <main className="pt-20">
         {/* HERO - 애니메이션 배경 추가 */}
 {/* HERO - 왼쪽 정렬 최적화 버전 */}
-<section className="relative px-6 pt-16 pb-20 overflow-hidden">
+<section className="relative px-6 pt-10 pb-15 overflow-hidden">
   {/* 애니메이션 배경 및 그리드 패턴 (기존과 동일) */}
   <div className="absolute inset-0 overflow-hidden">
     <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-fuchsia-500/20 blur-3xl animate-pulse" />

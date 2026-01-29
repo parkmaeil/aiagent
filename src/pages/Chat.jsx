@@ -1195,7 +1195,7 @@ const instructorReviewImages = [
             </div>
                 <span className="font-bold text-white text-amber-200">IT'S CODING</span>
               </div>
-              <h3 className="text-1xl md:text-2xl font-black text-slate-50">
+              <h3 className="text-1xl md:text-2xl font-black text-slate-100">
                 영향력있는 개발자가 세상을 바꾼다
               </h3>
              

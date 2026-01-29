@@ -1757,13 +1757,15 @@ const instructorReviewImages = [
       <footer className="py-12 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-fuchsia-500 to-violet-600 flex items-center justify-center shadow-md shadow-fuchsia-500/25">
-              <Code2 className="w-4 h-4 text-white" />
-            </div>
-            <span className="text-base md:text-lg font-black text-slate-50">
+{/* 로고 아이콘 박스 수정 버전 */}
+<div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform hover:rotate-12">
+  <Code2 className="w-4 h-4 text-[#050816]" /> {/* 아이콘을 배경색과 대비되는 어두운색으로 설정 */}
+</div>
+            <span className="text-base md:text-lg font-black text-[#00c897]">
               이츠코딩
             </span>
           </div>
+
 
           <p className="text-slate-500 text-sm mb-4">
             AI AGENT BOOTCAMP 2026

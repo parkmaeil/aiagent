@@ -436,7 +436,7 @@ const instructorReviewImages = [
               <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-500/20 via-fuchsia-500/20 to-violet-500/20 border border-rose-500/30 px-4 py-2 shadow-lg shadow-rose-500/10">
                 <Flame className="w-4 h-4 text-rose-400 animate-pulse" />
                 <span className="text-[12px] font-semibold text-slate-200">
-                  국비 6개월 과정을 5주로 압축한 AI Agent 부트캠프(비대면)
+                  국비 6개월 과정을 5주로 압축한 비대면 부트캠프
                 </span>
               </div>
 

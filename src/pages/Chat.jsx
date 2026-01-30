@@ -1736,20 +1736,22 @@ const instructorReviewImages = [
       {/* FOOTER */}
       <footer className="py-12 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto text-center">
-          <div className="flex items-center justify-center gap-2 mb-2">
-{/* 로고 아이콘 박스 수정 버전 */}
-<div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform hover:rotate-12">
-  <Code2 className="w-4 h-4 text-[#050816]" /> {/* 아이콘을 배경색과 대비되는 어두운색으로 설정 */}
+{/* flex-col로 세로 정렬하고, gap-1로 요소 사이 간격을 좁게 줍니다 */}
+<div className="flex flex-col items-center justify-center text-center mb-4 gap-0">
+  
+  {/* 1. 로고 이미지 (불필요한 감싸는 div 제거) */}
+  <img
+    src="/logo.png"
+    alt="이츠코딩 로고"
+    className="h-36 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
+  />
+
+  {/* 2. 하단 텍스트 */}
+  <p className="text-slate-500 text-sm font-medium tracking-wider -mt-10 relative z-10">
+    AI AGENT BOOTCAMP 2026
+  </p>
+  
 </div>
-            <span className="text-base md:text-lg font-black text-[#00c897]">
-              이츠코딩
-            </span>
-          </div>
-
-
-          <p className="text-slate-500 text-sm mb-4">
-            AI AGENT BOOTCAMP 2026
-          </p>
 
           <div className="flex items-center justify-center gap-5 mb-6 text-sm">
             <a

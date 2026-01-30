@@ -1709,7 +1709,7 @@ const instructorReviewImages = [
           <Sparkles className="w-4 h-4 text-emerald-300" />
         </div>
 
-        <h2 className="text-3xl md:text-3xl font-black text-slate-50 mb-4 tracking-tight">
+        <h2 className="text-2xl md:text-3xl font-black text-slate-50 mb-4 tracking-tight">
           당신의 영향력을 완성할 <br className="md:hidden" /> 마지막 기회
         </h2>
         
@@ -1717,7 +1717,7 @@ const instructorReviewImages = [
         <div className="flex items-center justify-center gap-4 mb-4">
           <span className="text-xl text-slate-500 line-through decoration-rose-500/50">₩500,000</span>
           <div className="flex flex-col items-start">
-            <span className="text-4xl md:text-3xl font-black bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+            <span className="text-3xl md:text-3xl font-black bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
               ₩300,000
             </span>
           </div>

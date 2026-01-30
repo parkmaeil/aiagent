@@ -1511,7 +1511,7 @@ const instructorReviewImages = [
         </span>
       </div>
       <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
-        코칭형 부트캠프는 이렇게 진행됩니다
+        부트캠프는 이렇게 진행됩니다
       </h2>
       <p className="mt-2 text-sm text-slate-400">
         주 3회 라이브 + 수요일 LAB + 금요일 1:1 COACH로{" "}
@@ -1621,7 +1621,7 @@ const instructorReviewImages = [
   <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
   
   <div className="max-w-5xl mx-auto relative">
-    <div className="text-center mb-16">
+    <div className="text-center mb-12">
       <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-6 py-2 mb-6 shadow-lg">
         <HelpCircle className="w-5 h-5 text-[#00c897]" />
         <span className="text-sm font-bold text-slate-200 tracking-wider">

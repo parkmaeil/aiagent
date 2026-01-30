@@ -575,7 +575,9 @@ const instructorReviewImages = [
     </div>
 
     {/* 오른쪽 일정 카드 (기존과 동일) */}
-    <div className="relative animate-fadeIn hidden lg:block" style={{animationDelay: '0.2s'}}>
+
+       <div className="relative w-full px-2 sm:px-0 animate-fadeIn order-1 lg:order-2 lg:col-span-1" style={{animationDelay: '0.1s'}}>
+    
             <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-700/50 p-8 md:p-10 space-y-8 shadow-2xl backdrop-blur-xl hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
             
             {/* 👇 기간 그대로 */}
@@ -650,7 +652,7 @@ const instructorReviewImages = [
         </span>
       </div>
       <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
-        국비·일반 교육과 완전히 다른 차별화
+        국비교육과 완전히 다른 차별화
       </h2>
       <p className="mt-2 text-base text-slate-400">
         2026년 국비 자부담 10% 시대,{" "}

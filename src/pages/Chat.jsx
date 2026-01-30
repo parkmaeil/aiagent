@@ -593,11 +593,11 @@ const instructorReviewImages = [
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
             <div className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/50 text-slate-50 font-semibold shadow-lg hover:shadow-xl hover:shadow-emerald-500/25 hover:scale-105 transition-all cursor-pointer">
               <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              <span className="text-sm font-bold">월/화/목_라이브</span>
+              <span className="text-sm font-bold">월/화/목 LIVE</span>
             </div>
             <div className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-violet-500/20 to-purple-500/20 border border-violet-500/50 text-slate-50 font-semibold shadow-lg hover:shadow-xl hover:shadow-violet-500/25 hover:scale-105 transition-all cursor-pointer">
               <Terminal className="w-5 h-5 group-hover:scale-110 transition-transform" />
-              <span className="text-sm font-bold">수/금_LAB+COACH</span>
+              <span className="text-sm font-bold">수/금 LAB+COACH</span>
             </div>
           </div>
         </div>

@@ -457,19 +457,14 @@ const instructorReviewImages = [
     }`}
   >
     <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-      <div className="flex items-center gap-3">
-        <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center shadow-lg shadow-emerald-500/20 transition-transform hover:rotate-12">
-          <Code2 className="w-4 h-4 text-[#050816]" />
-        </div>
-        <div>
-          <div className="text-sm font-bold tracking-tight text-emerald-400">
-            IT'S CODING
-          </div>
-          <div className="text-[11px] text-slate-500 font-semibold tracking-[0.2em] uppercase">
-            AI Agent Bootcamp
-          </div>
-        </div>
-      </div>
+ {/* 상단 헤더 로고 영역 */}
+<div className="flex items-center">
+  <img
+    src="/logo2.png" // public 폴더에 있는 로고 이미지 경로
+    alt="이츠코딩 로고" // 필수 대체 텍스트
+    className="h-25 w-auto object-contain" // 높이 설정 (h-8 ~ h-12 추천)
+  />
+</div>
 
       {/* 👇 중앙 통계: VOD → LAB/COACH로 변경 */}
       <div className="hidden md:flex items-center gap-2 text-[12px] text-slate-400">

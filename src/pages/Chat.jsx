@@ -844,7 +844,7 @@ const instructorReviewImages = [
         </section>
 
  {/* CURRICULUM - 코칭형 부트캠프 커리큘럼 */}
-<section className="py-16 px-6 relative overflow-hidden">
+<section className="py-13 px-6 relative overflow-hidden">
   {/* 배경 효과 */}
   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 via-50% to-violet-500/5" />
   <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/10 via-transparent to-transparent" />
@@ -1389,7 +1389,7 @@ const instructorReviewImages = [
     </div>
 
     {/* === 수강평 이미지 캐러셀 영역 === */}
-    <div className="mt-16 pt-12 border-t border-emerald-500/20">
+    <div className="mt-14 pt-12 border-t border-emerald-500/20">
       <div className="flex flex-col items-center mb-3">
         <div className="inline-flex items-center gap-2 mb-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-4 py-1.5 shadow-md">
           <Star className="w-4 h-4 text-emerald-300" />
@@ -1435,7 +1435,7 @@ const instructorReviewImages = [
 
 
 {/* SCHEDULE - 코칭형 부트캠프 시간표 */}
-<section className="py-16 px-6 relative overflow-hidden">
+<section className="py-10 px-6 relative overflow-hidden">
   {/* 배경 */}
   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 to-indigo-500/5" />
   
@@ -1554,11 +1554,11 @@ const instructorReviewImages = [
 </section>
 
 {/* TARGET AUDIENCE - IT'S CODING 브랜드 최적화 버전 */}
-<section className="py-20 px-6 relative overflow-hidden bg-gradient-to-b from-slate-950/60 via-emerald-950/10 to-slate-950/60 border-y border-slate-900">
+<section className="py-15 px-6 relative overflow-hidden bg-gradient-to-b from-slate-950/60 via-emerald-950/10 to-slate-950/60 border-y border-slate-900">
   <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
   
   <div className="max-w-5xl mx-auto relative">
-    <div className="text-center mb-12">
+    <div className="text-center mb-10">
       <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-6 py-2 mb-6 shadow-lg">
         <HelpCircle className="w-5 h-5 text-[#00c897]" />
         <span className="text-sm font-bold text-slate-200 tracking-wider">
@@ -1640,7 +1640,7 @@ const instructorReviewImages = [
 </section>
 
  {/* CTA - IT'S CODING 브랜드 동기화 버전 */}
-<section id="register" className="py-20 px-6 relative overflow-hidden">
+<section id="register" className="py-15 px-6 relative overflow-hidden">
   {/* 배경 그라데이션: 브랜드 컬러인 민트/에메랄드 톤으로 변경 */}
   <div className="absolute inset-0 bg-gradient-to-br from-[#00c897]/5 via-emerald-500/5 to-teal-500/5" />
   <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-900/10 via-transparent to-transparent" />

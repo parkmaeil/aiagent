@@ -1169,331 +1169,269 @@ const instructorReviewImages = [
   </div>
 </section>
 
-        {/* INSTRUCTOR - 프로필 이미지 배경 효과 */}
-        <section className="py-16 px-6 relative overflow-hidden">
-          {/* 배경 효과 */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-500/5 to-transparent" />
-          
-          <div className="max-w-5xl mx-auto relative">
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40 px-4 py-1.5 shadow-lg">
-                <Award className="w-4 h-4 text-amber-400" />
-                <span className="text-[12px] font-semibold text-slate-300">
-                  INSTRUCTOR
-                </span>
-              </div>
-              <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
-                누가 함께하나요?
-              </h2>
-              <p className="mt-2 text-base text-slate-400">
-                20년 이상의 교육 경험을 가진 Spring 기반 백엔드 & AI 에이전트
-                전문가입니다.
-              </p>
-            </div>
-
-            <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-800 p-8 md:p-10 shadow-2xl">
-              <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
-                <div className="relative shrink-0 group">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 via-orange-200 to-rose-200 rounded-3xl blur opacity-25 group-hover:opacity-5 transition duration-300"></div>
-                  <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-slate-900 overflow-hidden border border-slate-700">
-                   <img src="/park.jpg" alt="박매일 강사" />
-                  </div>
-                  <div className="absolute -bottom-3 -right-3 w-8 h-8 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-500 border-2 border-slate-950 flex items-center justify-center shadow-lg">
-                    <Star className="w-4 h-4 text-white" />
-                  </div>
-                </div>
-                <div className="flex-1 min-w-0">
-                  <h4 className="text-lg font-bold text-slate-50 mb-1">박매일(이츠코딩 대표)</h4>
-                  <p className="text-sm md:text-base text-slate-400 font-semibold mb-4">
-                    Backend · Spring AI Specialist
-                  </p>
-                  <div className="flex flex-wrap gap-2 mb-5 text-sm">
-                    <Badge color="from-cyan-500 to-blue-500" icon={<Zap className="w-3 h-3" />}>
-                      패스트캠퍼스 강사
-                    </Badge>
-                    <Badge color="from-violet-500 to-purple-500" icon={<GraduationCap className="w-3 h-3" />}>
-                      인프런 베스트셀러
-                    </Badge>
-                    <BadgeOutline icon={<Trophy className="w-3 h-3" />}>
-                      수강생 만족도 98%
-                    </BadgeOutline>
-                  </div>
-                  <p className="text-sm md:text-base text-slate-300 leading-relaxed mb-4">
-                    실무와 교육 현장을 20년 이상 오가며{" "}
-                    <span className="text-slate-50 font-semibold">
-                      Java·Spring 기반 백엔드 및 풀스택 교육
-                    </span>
-                    을 진행해 왔습니다. 최신{" "}
-                    <span className="text-cyan-300 font-semibold">
-                      Spring AI & Agent
-                    </span>{" "}
-                    분야를 반영한 실전 커리큘럼을 설계하고 있습니다.
-                  </p>
-                 
-     
-                </div>
-              </div>
-
-{/* ===== 여기에 이츠코딩 소개 추가 ===== */}
-{/* COMPACT BRAND SECTION WITH LOGO */}
-<div className="mt-2 mb-2 py-5 border-t border-slate-800/50 text-center">
-  <div className="space-y-5">
-    
-    {/* 1. 기본 로고 아이콘 */}
-    <div className="flex flex-col items-center gap-3">
-      <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform hover:rotate-12 duration-500">
-        <Code2 className="w-6 h-6 text-[#050816]" />
-      </div>
-      <div className="text-[10px] text-[#00c897] font-black tracking-[0.4em] uppercase">IT'S CODING</div>
-    </div>
-
-    {/* 2. 메인 슬로건 */}
-    <div className="space-y-4">
-      <h3 className="text-2xl md:text-4xl font-black text-slate-50 tracking-tight leading-tight">
-        영향력 있는 개발자가 <br className="md:hidden" />
-        <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
-          세상을 바꾼다
+{/* INSTRUCTOR - 모든 내용 복구 및 IT'S CODING 브랜딩 버전 */}
+<section className="py-16 px-6 relative overflow-hidden">
+  {/* 배경 효과: 브랜드 컬러인 에메랄드로 변경 */}
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 to-transparent" />
+  
+  <div className="max-w-5xl mx-auto relative">
+    <div className="text-center mb-10">
+      <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-4 py-1.5 shadow-lg">
+        <Award className="w-4 h-4 text-emerald-400" />
+        <span className="text-[12px] font-semibold text-slate-300">
+          INSTRUCTOR
         </span>
-      </h3>
-      
-      <p className="text-sm md:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed px-4">
-        코딩은 단순한 기술이 아니라 세상을 바꾸는 가장 강력한 언어입니다. <br className="hidden md:block" />
-        IT'S CODING은 그 언어에 AI라는 지능을 더해 당신의 영향력을 완성합니다.
+      </div>
+      <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
+        누가 함께하나요?
+      </h2>
+      <p className="mt-2 text-base text-slate-400">
+        20년 이상의 교육 경험을 가진 Spring 기반 백엔드 & AI 에이전트 전문가입니다.
       </p>
     </div>
 
-    {/* 3. 핵심 가치 필로소피 바 (Philosophy Bar) */}
-    <div className="inline-flex items-center justify-center gap-3 md:gap-8 px-8 py-4 rounded-[2rem] bg-white/[0.03] border border-white/5 shadow-inner">
-      {/* 본질 */}
-      <div className="flex items-center gap-2 group/val">
-        <span className="text-[#00c897] font-black text-lg md:text-xl">&lt;</span>
-        <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">본질</span>
-        <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Opening</span>
+    {/* 메인 프로필 카드 */}
+    <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-800 p-8 md:p-10 shadow-2xl">
+      <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
+        <div className="relative shrink-0 group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-[#00c897] via-emerald-300 to-teal-300 rounded-3xl blur opacity-25 group-hover:opacity-5 transition duration-300"></div>
+                   <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-slate-900 overflow-hidden border border-slate-700">
+                   <img src="/park.jpg" alt="박매일 강사" />
+                  </div>
+          <div className="absolute -bottom-3 -right-3 w-8 h-8 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 border-2 border-slate-950 flex items-center justify-center shadow-lg">
+            <Star className="w-4 h-4 text-white" />
+          </div>
+        </div>
+        <div className="flex-1 min-w-0">
+          <h4 className="text-lg font-bold text-slate-50 mb-1">박매일(이츠코딩 대표)</h4>
+          <p className="text-sm md:text-base text-slate-400 font-semibold mb-4">
+            Backend · Spring AI Specialist
+          </p>
+          <div className="flex flex-wrap gap-2 mb-5 text-sm">
+            <Badge color="from-emerald-500 to-teal-500" icon={<Zap className="w-3 h-3" />}>
+              패스트캠퍼스 강사
+            </Badge>
+            <Badge color="from-violet-500 to-purple-500" icon={<GraduationCap className="w-3 h-3" />}>
+              인프런 베스트셀러
+            </Badge>
+            <BadgeOutline icon={<Trophy className="w-3 h-3" />}>
+              수강생 만족도 98%
+            </BadgeOutline>
+          </div>
+          <p className="text-sm md:text-base text-slate-300 leading-relaxed mb-4">
+            실무와 교육 현장을 20년 이상 오가며{" "}
+            <span className="text-slate-50 font-semibold">
+              Java·Spring 기반 백엔드 및 풀스택 교육
+            </span>
+            을 진행해 왔습니다. 최신{" "}
+            <span className="text-emerald-400 font-semibold">
+              Spring AI & Agent
+            </span>{" "}
+            분야를 반영한 실전 커리큘럼을 설계하고 있습니다.
+          </p>
+        </div>
       </div>
 
-      <div className="text-slate-800 font-thin text-xl">|</div>
-
-      {/* 지능 */}
-      <div className="flex items-center gap-2 group/val">
-        <span className="text-[#00c897] font-black text-lg md:text-xl">/</span>
-        <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">지능</span>
-        <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Intelligence</span>
-      </div>
-
-      <div className="text-slate-800 font-thin text-xl">|</div>
-
-      {/* 성장 */}
-      <div className="flex items-center gap-2 group/val">
-        <span className="text-[#00c897] font-black text-lg md:text-xl">&gt;</span>
-        <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">성장</span>
-        <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Growth</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-              {/* 경력 아코디언 */}
-              <div className="mb-6">
-                <div 
-                  className="group rounded-2xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 p-5 cursor-pointer hover:shadow-xl hover:border-cyan-400/50 hover:shadow-cyan-500/10 transition-all duration-200 hover:-translate-y-1"
-                  onClick={() => setShowCareers(!showCareers)}
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <div className="w-11 h-11 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-                        <GraduationCap className="w-5 h-5 text-white" />
-                      </div>
-                      <div>
-                        <h4 className="text-lg font-bold text-slate-50 mb-1">강사 경력(20년)</h4>
-                        <p className="text-sm text-slate-400">주요 강의 이력</p>
-                      </div>
-                    </div>
-                    <ChevronDown className={`w-6 h-6 text-cyan-400 transition-transform duration-200 group-hover:text-cyan-300 ${showCareers ? 'rotate-180' : ''}`} />
-                  </div>
-                </div>
-
-                <div className={`overflow-hidden transition-all duration-300 ease-in-out ${showCareers ? 'max-h-[700px] md:max-h-[600px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
-                  <div className="grid md:grid-cols-2 gap-3 p-2">
-                    {[
-                      "패스트캠퍼스 백엔드 부트캠프 강의",
-                      "광주인공지능사관학교 강의",
-                      "한국전력공사 In-House 코딩교육",
-                      "소프트웨어마이스터고 산학협력교사",
-                      "스마트인재개발원 교육부장",
-                      "한양대학교 ERICA 온라인 강의",
-                      "한국전력공사 외 기업체 다수 강의",
-                      "인공지능·정보기술개발 직업능력개발훈련교사",
-                    ].map((career, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-start gap-3 rounded-xl bg-gradient-to-br from-slate-900/80 to-cyan-900/20 border border-slate-800/50 p-4 hover:bg-slate-900/90 hover:border-cyan-500/30 hover:shadow-lg hover:shadow-cyan-500/10 transition-all group"
-                      >
-                        <CheckCircle2 className="w-5 h-5 text-cyan-400 mt-1 flex-shrink-0 group-hover:text-cyan-300 transition-colors" />
-                        <p className="text-sm text-slate-200 leading-relaxed">{career}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-
-              {/* 온라인 콘텐츠 */}
-              <div className="p-6 rounded-2xl bg-gradient-to-r from-violet-500/10 to-purple-500/10 border border-violet-500/30 mb-6 hover:shadow-xl hover:shadow-violet-500/20 transition-all">
-                <div className="flex items-center gap-3 mb-5">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-violet-500 to-purple-500 flex items-center justify-center shadow-lg">
-                    <PlayCircle className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h4 className="text-lg md:text-xl font-black text-slate-50">온라인 교육 콘텐츠</h4>
-                    <p className="text-sm text-slate-400">베스트셀러 강의 총정리</p>
-                  </div>
-                </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <a
-                    href="https://www.inflearn.com/search?s=%EB%B0%95%EB%A7%A4%EC%9D%BC"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group p-5 rounded-xl bg-gradient-to-br from-slate-900/90 to-violet-900/20 border border-slate-800/50 hover:bg-white/5 hover:border-violet-500/40 transition-all cursor-pointer shadow-md hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1"
-                  >
-                    <p className="text-base font-bold text-slate-200 mb-2 group-hover:text-violet-400 transition-colors">
-                      인프런
-                    </p>
-                    <p className="text-sm text-slate-400 leading-relaxed">
-                      Java, DB, MVC, Spring, Spring AI & Agent, IoT
-                    </p>
-                  </a>
-                  <a
-                    href="https://fastcampus.co.kr/search?keyword=%EB%B0%95%EB%A7%A4%EC%9D%BC"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group p-5 rounded-xl bg-gradient-to-br from-slate-900/90 to-violet-900/20 border border-slate-800/50 hover:bg-white/5 hover:border-violet-500/40 transition-all cursor-pointer shadow-md hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1"
-                  >
-                    <p className="text-base font-bold text-slate-200 mb-2 group-hover:text-violet-400 transition-colors">
-                      패스트캠퍼스
-                    </p>
-                    <p className="text-sm text-slate-400 leading-relaxed">
-                      Java, Spring Boot
-                    </p>
-                  </a>
-                </div>
-              </div>
-
-              <div className="rounded-2xl bg-gradient-to-br from-slate-900/90 to-emerald-900/20 border border-slate-800 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-                <div className="flex items-center gap-3">
-                  <Mail className="w-5 h-5 text-emerald-400" />
-                  <div>
-                    <p className="text-sm text-slate-400 mb-1">Email</p>
-                    <p className="text-base font-semibold text-slate-200">
-                      <a href="mailto:bitcocom@empas.com" className="hover:text-emerald-400 transition-all duration-200">
-                        bitcocom@empas.com
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <a
-                  href={KAKAO_CHANNEL_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-6 py-3 text-sm font-bold text-emerald-200 hover:bg-emerald-500/30 hover:text-emerald-50 hover:border-emerald-500/60 shadow-lg hover:shadow-xl hover:shadow-emerald-500/20 hover:-translate-y-1 transition-all duration-200"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  문의 및 제휴
-                  <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </div>
+      {/* 이츠코딩 소개 섹션 */}
+      <div className="mt-2 mb-2 py-5 border-t border-slate-800/50 text-center">
+        <div className="space-y-5">
+          <div className="flex flex-col items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#00c897] to-[#009e77] flex items-center justify-center shadow-lg shadow-[#00c897]/20 transition-transform hover:rotate-12 duration-500">
+              <Code2 className="w-6 h-6 text-[#050816]" />
             </div>
+            <div className="text-[10px] text-[#00c897] font-black tracking-[0.4em] uppercase">IT'S CODING</div>
           </div>
 
-{/* === 수강평 이미지 캐러셀 (모바일 높이 최적화 버전) === */}
-<div className="mt-16 pt-12 border-t border-amber-500/20">
-  
-  {/* 1. 상단 제목 영역: 중앙 정렬 */}
-  <div className="flex flex-col items-center mb-3">
-    <div className="inline-flex items-center gap-2 mb-2 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40 px-4 py-1.5 shadow-md">
-      <Star className="w-4 h-4 text-amber-300" />
-      <span className="text-xs font-semibold text-slate-200">실제 수강평</span>
+          <div className="space-y-4">
+            <h3 className="text-2xl md:text-4xl font-black text-slate-50 tracking-tight leading-tight">
+              영향력 있는 개발자가 <br className="md:hidden" />
+              <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+                세상을 바꾼다
+              </span>
+            </h3>
+            <p className="text-sm md:text-base text-slate-400 max-w-2xl mx-auto leading-relaxed px-4">
+              코딩은 단순한 기술이 아니라 세상을 바꾸는 가장 강력한 언어입니다. <br className="hidden md:block" />
+              IT'S CODING은 그 언어에 AI라는 지능을 더해 당신의 영향력을 완성합니다.
+            </p>
+          </div>
+
+          <div className="inline-flex items-center justify-center gap-3 md:gap-8 px-8 py-4 rounded-[2rem] bg-white/[0.03] border border-white/5 shadow-inner">
+            <div className="flex items-center gap-2 group/val">
+              <span className="text-[#00c897] font-black text-lg md:text-xl">&lt;</span>
+              <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">본질</span>
+              <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Opening</span>
+            </div>
+            <div className="text-slate-800 font-thin text-xl">|</div>
+            <div className="flex items-center gap-2 group/val">
+              <span className="text-[#00c897] font-black text-lg md:text-xl">/</span>
+              <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">지능</span>
+              <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Intelligence</span>
+            </div>
+            <div className="text-slate-800 font-thin text-xl">|</div>
+            <div className="flex items-center gap-2 group/val">
+              <span className="text-[#00c897] font-black text-lg md:text-xl">&gt;</span>
+              <span className="text-slate-200 font-bold text-sm md:text-base group-hover/val:text-[#00c897] transition-colors">성장</span>
+              <span className="hidden sm:inline text-slate-500 text-[10px] uppercase tracking-widest font-medium">Growth</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 경력 아코디언 */}
+      <div className="mb-6">
+        <div 
+          className="group rounded-2xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 p-5 cursor-pointer hover:shadow-xl hover:border-emerald-400/50 hover:shadow-emerald-500/10 transition-all duration-200 hover:-translate-y-1"
+          onClick={() => setShowCareers(!showCareers)}
+        >
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-11 h-11 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+                <GraduationCap className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-slate-50 mb-1">강사 경력(20년)</h4>
+                <p className="text-sm text-slate-400">주요 강의 이력</p>
+              </div>
+            </div>
+            <ChevronDown className={`w-6 h-6 text-emerald-400 transition-transform duration-200 group-hover:text-emerald-300 ${showCareers ? 'rotate-180' : ''}`} />
+          </div>
+        </div>
+
+        <div className={`overflow-hidden transition-all duration-300 ease-in-out ${showCareers ? 'max-h-[700px] md:max-h-[600px] opacity-100 mt-4' : 'max-h-0 opacity-0'}`}>
+          <div className="grid md:grid-cols-2 gap-3 p-2">
+            {[
+              "패스트캠퍼스 백엔드 부트캠프 강의",
+              "광주인공지능사관학교 강의",
+              "한국전력공사 In-House 코딩교육",
+              "소프트웨어마이스터고 산학협력교사",
+              "스마트인재개발원 교육부장",
+              "한양대학교 ERICA 온라인 강의",
+              "한국전력공사 외 기업체 다수 강의",
+              "인공지능·정보기술개발 직업능력개발훈련교사",
+            ].map((career, idx) => (
+              <div
+                key={idx}
+                className="flex items-start gap-3 rounded-xl bg-gradient-to-br from-slate-900/80 to-emerald-900/20 border border-slate-800/50 p-4 hover:bg-slate-900/90 hover:border-emerald-500/30 hover:shadow-lg hover:shadow-emerald-500/10 transition-all group"
+              >
+                <CheckCircle2 className="w-5 h-5 text-emerald-400 mt-1 flex-shrink-0 group-hover:text-emerald-300 transition-colors" />
+                <p className="text-sm text-slate-200 leading-relaxed">{career}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* 온라인 콘텐츠 - 누락되었던 부분 복구 */}
+      <div className="p-6 rounded-2xl bg-gradient-to-r from-violet-500/10 to-purple-500/10 border border-violet-500/30 mb-6 hover:shadow-xl hover:shadow-violet-500/20 transition-all">
+        <div className="flex items-center gap-3 mb-5">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-violet-500 to-purple-500 flex items-center justify-center shadow-lg">
+            <PlayCircle className="w-5 h-5 text-white" />
+          </div>
+          <div>
+            <h4 className="text-lg md:text-xl font-black text-slate-50">온라인 교육 콘텐츠</h4>
+            <p className="text-sm text-slate-400">베스트셀러 강의 총정리</p>
+          </div>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <a
+            href="https://www.inflearn.com/search?s=%EB%B0%95%EB%A7%A4%EC%9D%BC"
+            target="_blank"
+            rel="noreferrer"
+            className="group p-5 rounded-xl bg-gradient-to-br from-slate-900/90 to-violet-900/20 border border-slate-800/50 hover:bg-white/5 hover:border-violet-500/40 transition-all cursor-pointer shadow-md hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1"
+          >
+            <p className="text-base font-bold text-slate-200 mb-2 group-hover:text-violet-400 transition-colors">
+              인프런
+            </p>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Java, DB, MVC, Spring, Spring AI & Agent, IoT
+            </p>
+          </a>
+          <a
+            href="https://fastcampus.co.kr/search?keyword=%EB%B0%95%EB%A7%A4%EC%9D%BC"
+            target="_blank"
+            rel="noreferrer"
+            className="group p-5 rounded-xl bg-gradient-to-br from-slate-900/90 to-violet-900/20 border border-slate-800/50 hover:bg-white/5 hover:border-violet-500/40 transition-all cursor-pointer shadow-md hover:shadow-xl hover:shadow-violet-500/10 hover:-translate-y-1"
+          >
+            <p className="text-base font-bold text-slate-200 mb-2 group-hover:text-violet-400 transition-colors">
+              패스트캠퍼스
+            </p>
+            <p className="text-sm text-slate-400 leading-relaxed">
+              Java, Spring Boot
+            </p>
+          </a>
+        </div>
+      </div>
+
+      {/* 연락처 및 제휴 문의 - 누락되었던 부분 복구 */}
+      <div className="rounded-2xl bg-gradient-to-br from-slate-900/90 to-emerald-900/20 border border-slate-800 p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div className="flex items-center gap-3">
+          <Mail className="w-5 h-5 text-emerald-400" />
+          <div>
+            <p className="text-sm text-slate-400 mb-1">Email</p>
+            <p className="text-base font-semibold text-slate-200">
+              <a href="mailto:bitcocom@empas.com" className="hover:text-emerald-400 transition-all duration-200">
+                bitcocom@empas.com
+              </a>
+            </p>
+          </div>
+        </div>
+        <a
+          href={KAKAO_CHANNEL_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="group inline-flex items-center gap-3 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-6 py-3 text-sm font-bold text-emerald-200 hover:bg-emerald-500/30 hover:text-emerald-50 hover:border-emerald-500/60 shadow-lg hover:shadow-xl hover:shadow-emerald-500/20 hover:-translate-y-1 transition-all duration-200"
+        >
+          <MessageCircle className="w-5 h-5" />
+          문의 및 제휴
+          <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+      </div>
     </div>
-    
-    <div className="flex items-center gap-2 bg-white/5 px-4 py-1 rounded-full border border-white/5">
-      <span className="text-[10px] font-black text-amber-500 tracking-widest uppercase">Page</span>
-      <span className="text-xs font-mono font-bold text-slate-400">
-        {currentReviewIndex + 1} <span className="opacity-30">/</span> {instructorReviewImages.length}
-      </span>
+
+    {/* === 수강평 이미지 캐러셀 영역 === */}
+    <div className="mt-16 pt-12 border-t border-emerald-500/20">
+      <div className="flex flex-col items-center mb-3">
+        <div className="inline-flex items-center gap-2 mb-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-4 py-1.5 shadow-md">
+          <Star className="w-4 h-4 text-emerald-300" />
+          <span className="text-xs font-semibold text-slate-200">실제 수강평</span>
+        </div>
+        <div className="flex items-center gap-2 bg-white/5 px-4 py-1 rounded-full border border-white/5">
+          <span className="text-[10px] font-black text-emerald-500 tracking-widest uppercase">Page</span>
+          <span className="text-xs font-mono font-bold text-slate-400">
+            {currentReviewIndex + 1} <span className="opacity-30">/</span> {instructorReviewImages.length}
+          </span>
+        </div>
+      </div>
+
+      <div className="relative mx-auto w-full max-w-5xl h-[220px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] 
+                      bg-[#0d0d15] border-2 border-white/5 shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden group">
+        {instructorReviewImages.map((review, index) => (
+          <img
+            key={review.id}
+            src={review.src}
+            alt={review.alt}
+            className={`absolute inset-0 w-full h-full object-contain p-4 md:p-12 transition-all duration-[1200ms] ${index === currentReviewIndex ? 'opacity-100 scale-100 z-10' : 'opacity-0 scale-95 blur-sm z-0'}`}
+          />
+        ))}
+        <div className="absolute inset-x-0 bottom-0 h-24 md:h-40 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none z-20" />
+        <button onClick={() => setCurrentReviewIndex((prev) => (prev - 1 + instructorReviewImages.length) % instructorReviewImages.length)} className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-black/50 hover:bg-emerald-500 border border-white/10 backdrop-blur-xl flex items-center justify-center shadow-2xl text-white hover:scale-110 transition-all duration-300 z-30 opacity-0 group-hover:opacity-100">
+          <ChevronLeft className="w-5 h-5 md:w-7 md:h-7" />
+        </button>
+        <button onClick={() => setCurrentReviewIndex((prev) => (prev + 1) % instructorReviewImages.length)} className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-black/50 hover:bg-emerald-500 border border-white/10 backdrop-blur-xl flex items-center justify-center shadow-2xl text-white hover:scale-110 transition-all duration-300 z-30 opacity-0 group-hover:opacity-100">
+          <ChevronRight className="w-5 h-5 md:w-7 md:h-7" />
+        </button>
+        <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2 p-1.5 bg-black/40 backdrop-blur-md rounded-full border border-white/10 z-30">
+          {instructorReviewImages.map((_, index) => (
+            <button key={index} onClick={() => setCurrentReviewIndex(index)} className={`h-1 md:h-1.5 rounded-full transition-all duration-500 ${index === currentReviewIndex ? 'w-6 md:w-10 bg-emerald-400' : 'w-1.5 md:w-2.5 bg-white/20'}`} />
+          ))}
+        </div>
+      </div>
+      <p className="mt-4 text-center text-[10px] md:text-sm text-slate-400 leading-relaxed uppercase tracking-tighter font-medium">
+        실제 진행 강의들의 찐 수강생 후기입니다. <span className="text-emerald-300 font-bold ml-1">98% 만족도 기록 중</span>
+      </p>
     </div>
   </div>
-
-  {/* 2. 메인 캐러셀 컨테이너: 모바일 높이를 h-[220px]로 대폭 축소 */}
-  <div className="relative mx-auto w-full max-w-5xl h-[220px] md:h-[500px] rounded-[2rem] md:rounded-[3rem] 
-                  bg-[#0d0d15] border-2 border-white/5 shadow-[0_0_50px_rgba(0,0,0,0.5)] overflow-hidden group">
-    
-    {/* 이미지 슬라이드: 모바일 패딩을 p-4로 줄여 공간 활용도 극대화 */}
-    {instructorReviewImages.map((review, index) => (
-      <img
-        key={review.id}
-        src={review.src}
-        alt={review.alt}
-        className={`
-          absolute inset-0 w-full h-full 
-          object-contain 
-          p-4 md:p-12     /* 모바일 p-4, 데스크탑 p-12로 조절 */
-          transition-all duration-[1200ms] cubic-bezier(0.4, 0, 0.2, 1)
-          ${index === currentReviewIndex 
-            ? 'opacity-100 scale-100 z-10' 
-            : 'opacity-0 scale-95 blur-sm z-0'
-          }
-        `}
-      />
-    ))}
-
-    {/* 하단 쉐도우 오버레이: 높이를 32로 줄여 작은 화면에 맞춤 */}
-    <div className="absolute inset-x-0 bottom-0 h-24 md:h-40 bg-gradient-to-t from-black/90 via-black/40 to-transparent pointer-events-none z-20" />
-
-    {/* 좌우 네비게이션 버튼: 모바일에서는 크기를 살짝 줄임 */}
-    <button
-      onClick={() => setCurrentReviewIndex((prev) => (prev - 1 + instructorReviewImages.length) % instructorReviewImages.length)}
-      className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 
-                  rounded-xl md:rounded-2xl bg-black/50 hover:bg-amber-500 border border-white/10 backdrop-blur-xl
-                  flex items-center justify-center shadow-2xl text-white
-                  hover:scale-110 transition-all duration-300 z-30 opacity-0 group-hover:opacity-100"
-    >
-      <ChevronLeft className="w-5 h-5 md:w-7 md:h-7" />
-    </button>
-
-    <button
-      onClick={() => setCurrentReviewIndex((prev) => (prev + 1) % instructorReviewImages.length)}
-      className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 w-10 h-10 md:w-14 md:h-14 
-                  rounded-xl md:rounded-2xl bg-black/50 hover:bg-amber-500 border border-white/10 backdrop-blur-xl
-                  flex items-center justify-center shadow-2xl text-white
-                  hover:scale-110 transition-all duration-300 z-30 opacity-0 group-hover:opacity-100"
-    >
-      <ChevronRight className="w-5 h-5 md:w-7 md:h-7" />
-    </button>
-
-    {/* 하단 점(Dots) 인디케이터: 모바일에서도 깔끔하게 보이도록 배치 */}
-    <div className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 flex items-center gap-2 p-1.5 
-                    bg-black/40 backdrop-blur-md rounded-full border border-white/10 z-30">
-      {instructorReviewImages.map((_, index) => (
-        <button
-          key={index}
-          onClick={() => setCurrentReviewIndex(index)}
-          className={`
-            h-1 md:h-1.5 rounded-full transition-all duration-500
-            ${index === currentReviewIndex 
-              ? 'w-6 md:w-10 bg-amber-400' 
-              : 'w-1.5 md:w-2.5 bg-white/20'
-            }
-          `}
-        />
-      ))}
-    </div>
-  </div>
-
-  {/* 3. 하단 설명 영역 */}
-  <p className="mt-4 text-center text-[10px] md:text-sm text-slate-400 leading-relaxed uppercase tracking-tighter font-medium">
-    실제 진행 강의들의 찐 수강생 후기입니다. 
-    <span className="text-amber-300 font-bold ml-1">98% 만족도 기록 중</span>
-  </p>
-</div>
- </section>
+</section>
 
 
 {/* SCHEDULE - 코칭형 부트캠프 시간표 */}

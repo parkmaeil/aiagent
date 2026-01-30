@@ -1616,81 +1616,91 @@ const instructorReviewImages = [
   </div>
 </section>
 
-        {/* TARGET AUDIENCE - 3D 카드 효과 */}
-        <section className="py-16 px-6 relative overflow-hidden bg-gradient-to-b from-slate-950/60 via-indigo-950/20 to-slate-950/60 border-y border-slate-900">
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
-          
-          <div className="max-w-5xl mx-auto relative">
-            <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/40 px-5 py-2 mb-4 shadow-lg">
-                <HelpCircle className="w-5 h-5 text-indigo-400" />
-                <span className="text-sm font-bold text-slate-200">
-                  TARGET AUDIENCE
-                </span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-black text-slate-50 tracking-tight mb-4">
-                이런 분들께<br className="md:hidden"/> <span className="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">특히 추천</span>
-              </h2>
-              <p className="text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-                실제 수강생들이 가장 많이 고민했던 내용들, <span className="text-slate-100 font-bold bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/30">이츠코딩</span>이 함께 해결합니다.
-              </p>
-            </div>
+{/* TARGET AUDIENCE - IT'S CODING 브랜드 최적화 버전 */}
+<section className="py-20 px-6 relative overflow-hidden bg-gradient-to-b from-slate-950/60 via-emerald-950/10 to-slate-950/60 border-y border-slate-900">
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
+  
+  <div className="max-w-5xl mx-auto relative">
+    <div className="text-center mb-16">
+      <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-6 py-2 mb-6 shadow-lg">
+        <HelpCircle className="w-5 h-5 text-[#00c897]" />
+        <span className="text-sm font-bold text-slate-200 tracking-wider">
+          TARGET AUDIENCE
+        </span>
+      </div>
+      <h2 className="text-3xl md:text-5xl font-black text-slate-50 tracking-tight mb-6">
+        이런 분들께<br className="md:hidden"/> <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">특히 추천</span>합니다.
+      </h2>
+      <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        실제 수강생들이 가장 많이 고민했던 내용들,<span className="text-slate-100 font-bold bg-[#00c897]/20 px-3 py-1 rounded-full border border-[#00c897]/30">이츠코딩</span>이 함께 해결합니다.
+      </p>
+    </div>
 
-            <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
-              {[
-                {
-                  icon: "💼",
-                  title: "바쁜 직장인",
-                  desc: [
-                    "장기간 및 장시간 국비과정 참여가 어려운 분",
-                    "직장이나 사업으로 학원 다니기 힘든 분"
-                  ]
-                },
-                {
-                  icon: "⚡", 
-                  title: "빠른 로드맵",
-                  desc: [
-                    "6~8개월 투자보다 빠른 학습을 원하는 분", 
-                    "단일 과정으로 자바 풀스택 + AI 함께 배우고 싶은 분"
-                  ]
-                },
-                {
-                  icon: "🎯",
-                  title: "실전 기술",
-                  desc: [
-                    "실무에서 바로 쓰는 Spring AI & Agent 흐름을 알고 싶은 분",
-                    "자바 기본기는 있지만 연결 기술이 막막한 분"
-                  ]
-                }
-              ].map((item, idx) => (
-                <div
-                  key={idx}
-                  className="group relative rounded-3xl bg-gradient-to-br from-slate-900/95 via-slate-900/70 to-slate-950/95 border border-slate-800/50 hover:border-indigo-500/50 p-8 hover:shadow-2xl hover:shadow-indigo-500/20 transition-all duration-300 hover:-translate-y-2 backdrop-blur-sm"
-                >
-                  {/* 배경 원 */}
-                  <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-500/5 to-purple-500/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                  
-                  {/* 아이콘 */}
-                  <div className="relative z-10 w-20 h-20 rounded-3xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border-2 border-indigo-500/30 flex items-center justify-center mx-auto mb-6 shadow-xl group-hover:shadow-2xl group-hover:shadow-indigo-500/25 group-hover:scale-110 transition-all duration-300">
-                    <span className="text-3xl group-hover:scale-110 transition-transform">{item.icon}</span>
-                  </div>
-                  
-                  {/* 내용 */}
-                  <div className="relative z-10 text-center space-y-2">
-                    <h3 className="text-xl font-black text-slate-50 bg-gradient-to-r from-slate-100 to-slate-200 bg-clip-text tracking-tight mb-4">
-                      {item.title}
-                    </h3>
-                    {item.desc.map((line, lineIdx) => (
-                      <p key={lineIdx} className="text-sm md:text-base text-slate-300 leading-relaxed group-hover:text-slate-200 transition-colors px-2 py-1 bg-slate-900/50 rounded-lg hover:bg-slate-900/70 transition-all">
-                        {line}
-                      </p>
-                    ))}
-                  </div>
+    <div className="grid lg:grid-cols-3 gap-8">
+      {[
+        {
+          icon: "⏰",
+          title: "효율을 찾는 바쁜 직장인",
+          desc: [
+            "6개월 이상의 국비 과정이 부담스러운 분",
+            "현업과 학습을 병행할 '압축 로드맵'이 필요한 분"
+          ],
+          label: "본질 Opening"
+        },
+        {
+          icon: "💡", 
+          title: "VOD 학습의 한계를 느끼는 분", 
+          desc: [
+            "강의는 들었지만 내 프로젝트 적용은 막막한 분", 
+            "전문가의 1:1 코드 리뷰와 피드백이 절실한 분"
+          ],
+          label: "지능 Intelligence"
+        },
+        {
+          icon: "🚀",
+          title: "실전 AI 역량을 원하는 개발자",
+          desc: [
+            "단순 코딩을 넘어 AI 에이전트 설계를 원하는 분",
+            "MCP와 Spring AI를 실무 수준으로 구현하고 싶은 분"
+          ],
+          label: "성장 Growth"
+        }
+      ].map((item, idx) => (
+        <div
+          key={idx}
+          className="group relative rounded-[2rem] bg-gradient-to-br from-slate-900/95 via-slate-900/70 to-slate-950/95 border border-slate-800/50 hover:border-[#00c897]/50 p-8 hover:shadow-2xl hover:shadow-[#00c897]/10 transition-all duration-500 hover:-translate-y-3 backdrop-blur-sm"
+        >
+          {/* 상단 기호 라벨 */}
+          <div className="text-[10px] font-black text-[#00c897]/50 uppercase tracking-[0.2em] mb-4 group-hover:text-[#00c897] transition-colors">
+            {item.label}
+          </div>
+          
+          {/* 아이콘 영역 */}
+          <div className="relative z-10 w-16 h-16 rounded-2xl bg-emerald-500/10 border border-[#00c897]/30 flex items-center justify-center mb-6 shadow-xl group-hover:bg-[#00c897] group-hover:scale-110 transition-all duration-500">
+            <span className="text-3xl group-hover:brightness-125">{item.icon}</span>
+          </div>
+          
+          {/* 내용 영역 */}
+          <div className="relative z-10 space-y-4">
+            <h3 className="text-xl font-black text-slate-50 tracking-tight">
+              {item.title}
+            </h3>
+            <div className="space-y-3">
+              {item.desc.map((line, lineIdx) => (
+                <div key={lineIdx} className="flex gap-2">
+                  <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#00c897]/40 shrink-0" />
+                  <p className="text-sm md:text-base text-slate-400 leading-relaxed group-hover:text-slate-200 transition-colors">
+                    {line}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
-        </section>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
  {/* CTA - IT'S CODING 브랜드 동기화 버전 */}
 <section id="register" className="py-20 px-6 relative overflow-hidden">

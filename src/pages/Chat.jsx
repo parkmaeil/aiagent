@@ -458,7 +458,7 @@ const instructorReviewImages = [
   >
     <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
  {/* 상단 헤더 로고 영역 */}
-<div className="flex items-center">
+<div className="flex items-left justify-center">
   <img
     src="/logo2.png" // public 폴더에 있는 로고 이미지 경로
     alt="이츠코딩 로고" // 필수 대체 텍스트
@@ -1736,13 +1736,13 @@ const instructorReviewImages = [
   
   {/* 1. 로고 이미지 (불필요한 감싸는 div 제거) */}
   <img
-    src="/logo2.png"
+    src="/logo.png"
     alt="이츠코딩 로고"
-    className="h-28 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
+    className="h-30 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
   />
 
   {/* 2. 하단 텍스트 */}
-  <p className="text-slate-500 text-[11px] tracking-widest -mt-9 relative z-10">
+  <p className="text-slate-500 text-[9px] tracking-widest -mt-4 relative z-10">
   AI AGENT BOOTCAMP 2026
 </p>
   

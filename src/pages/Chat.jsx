@@ -1743,11 +1743,11 @@ const instructorReviewImages = [
   <img
     src="/logo.png"
     alt="이츠코딩 로고"
-    className="h-36 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
+    className="h-40 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
   />
 
   {/* 2. 하단 텍스트 */}
-  <p className="text-slate-500 text-sm font-medium tracking-wider -mt-10 relative z-10">
+  <p className="text-slate-500 text-sm font-medium tracking-wider -mt-5 relative z-10">
     AI AGENT BOOTCAMP 2026
   </p>
   

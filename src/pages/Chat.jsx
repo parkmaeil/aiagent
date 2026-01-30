@@ -504,78 +504,79 @@ const instructorReviewImages = [
   </nav>
 
   <main className="pt-20">
-    {/* HERO 섹션 */}
-    <section className="relative px-6 pt-10 pb-15 overflow-hidden">
-      {/* 배경들 그대로 */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-emerald-500/20 blur-3xl animate-pulse" />
-        <div className="absolute -bottom-40 right-10 h-80 w-80 rounded-full bg-teal-500/15 blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
-        <div className="absolute top-1/2 left-10 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
+<section className="relative px-6 pt-10 pb-15 overflow-hidden">
+  {/* 배경 레이어 (기존 동일) */}
+  <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-emerald-500/20 blur-3xl animate-pulse" />
+    <div className="absolute -bottom-40 right-10 h-80 w-80 rounded-full bg-teal-500/15 blur-3xl animate-pulse" style={{animationDelay: '1s'}} />
+    <div className="absolute top-1/2 left-10 h-72 w-72 rounded-full bg-emerald-500/10 blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
+  </div>
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
+
+  <div className="relative mx-auto max-w-6xl grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-center">
+    
+    {/* 1. 왼쪽 콘텐츠 - 확실한 중앙 정렬을 위해 w-full 및 mx-auto 적용 */}
+    <div className="flex flex-col items-center justify-center w-full animate-fadeIn text-center">
+      {/* HeroBillboard 자체가 중앙 정렬을 지원해야 합니다 */}
+      <div className="w-full mb-6">
+        <HeroBillboard />
       </div>
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
 
-      <div className="relative mx-auto max-w-6xl grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-center">
-        
-        {/* 왼쪽 콘텐츠 - HeroBillboard 그대로 */}
-        <div className="flex flex-col items-center lg:items-center animate-fadeIn text-center">
-          <HeroBillboard />
-
-          <div className="mb-4 relative inline-block group mx-auto">
-            <div className="relative z-10 bg-slate-950/50 backdrop-blur-md border border-emerald-500/30 text-emerald-100 px-8 py-3.5 rounded-[2rem] font-bold text-base md:text-xl shadow-2xl">
-              <span className="text-teal-400">모집중</span> 코칭형 AI Agent Bootcamp
-            </div>
-            <div className="absolute left-1/2 -translate-x-1/2 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-emerald-500/30 rotate-45 z-0" />
-          </div>
-
-          {/* 👇 설명문구: VOD → 코칭 강조 */}
-          <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-8 leading-relaxed mx-auto">
-            Spring AI · RAG · MCP · Multi-Agent 실전 프로젝트를{" "}
-            <span className="text-slate-100 font-semibold">라이브 + LAB + 1:1 코칭</span>
-            으로 배포까지 완성합니다. 기존 VOD 학습자도 환영합니다!
-          </p>
-
-          {/* CTA 그대로 */}
-          <div className="flex flex-col sm:flex-row gap-4 mb-5 w-full justify-center">
-            <a
-              href="https://forms.gle/t7bKt7AQXpP9aoSp7"
-              target="_blank"
-              rel="noreferrer"
-              className="group flex items-center justify-center gap-3 rounded-2xl bg-emerald-600 text-white px-10 py-4 text-base font-black shadow-xl shadow-emerald-500/20 hover:bg-emerald-500 hover:-translate-y-1 transition-all duration-300"
-            >
-              얼리버드 40% 신청하기
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </a>
-            <a
-              href={KAKAO_CHANNEL_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center justify-center gap-3 rounded-2xl bg-white/5 border border-white/10 text-slate-300 px-10 py-4 text-base font-bold hover:bg-white/10 transition-all duration-300"
-            >
-              <MessageCircle className="w-5 h-5 text-[#FEE500]" />
-              카카오톡 실시간 상담
-            </a>
-          </div>
-
-          {/* 통계 태그 그대로 */}
-          <div className="flex flex-wrap items-center justify-center gap-6 text-[12px] text-slate-500">
-            <div className="flex items-center gap-1.5">
-              <Clock className="w-3 h-3 text-emerald-400" />
-              <span><span className="text-slate-100 font-semibold">5주</span> 코칭 부트캠프</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Users className="w-3 h-3 text-violet-400" />
-              <span>선착순 <span className="text-slate-100 font-semibold">20명</span> 소수정예</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <Star className="w-3 h-3 text-amber-400" />
-              <span>수강생 만족도 <span className="text-slate-100 font-semibold">98%</span></span>
-            </div>
-          </div>
+      <div className="mb-6 relative inline-block group mx-auto">
+        <div className="relative z-10 bg-slate-950/50 backdrop-blur-md border border-emerald-500/30 text-emerald-100 px-8 py-3.5 rounded-[2rem] font-bold text-base md:text-xl shadow-2xl">
+          <span className="text-teal-400">모집중</span> 코칭형 AI Agent Bootcamp
         </div>
+        <div className="absolute left-1/2 -translate-x-1/2 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-emerald-500/30 rotate-45 z-0" />
+      </div>
 
-        {/* 오른쪽 일정 카드 */}
-        <div className="relative animate-fadeIn" style={{animationDelay: '0.2s'}}>
-          <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-700/50 p-8 md:p-10 space-y-8 shadow-2xl backdrop-blur-xl hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
+      <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-10 leading-relaxed mx-auto">
+        Spring AI · RAG · MCP · Multi-Agent 실전 프로젝트를{" "}
+        <span className="text-slate-100 font-semibold italic">라이브 + LAB + 1:1 코칭</span>
+        으로 배포까지 완성합니다. 기존 VOD 학습자도 환영합니다!
+      </p>
+
+      {/* CTA 버튼 그룹 중앙 정렬 보강 */}
+      <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full justify-center items-center">
+        <a
+          href="https://forms.gle/t7bKt7AQXpP9aoSp7"
+          target="_blank"
+          rel="noreferrer"
+          className="group flex items-center justify-center gap-3 w-full sm:w-auto rounded-2xl bg-emerald-600 text-white px-10 py-4 text-base font-black shadow-xl shadow-emerald-500/20 hover:bg-emerald-500 hover:-translate-y-1 transition-all duration-300"
+        >
+          얼리버드 40% 신청하기
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        </a>
+        <a
+          href={KAKAO_CHANNEL_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="flex items-center justify-center gap-3 w-full sm:w-auto rounded-2xl bg-white/5 border border-white/10 text-slate-300 px-10 py-4 text-base font-bold hover:bg-white/10 transition-all duration-300"
+        >
+          <MessageCircle className="w-5 h-5 text-[#FEE500]" />
+          카카오톡 실시간 상담
+        </a>
+      </div>
+
+      {/* 하단 통계 태그 */}
+      <div className="flex flex-wrap items-center justify-center gap-6 text-[12px] text-slate-500">
+        <div className="flex items-center gap-1.5">
+          <Clock className="w-3 h-3 text-emerald-400" />
+          <span><span className="text-slate-100 font-semibold">5주</span> 코칭 부트캠프</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <Users className="w-3 h-3 text-violet-400" />
+          <span>선착순 <span className="text-slate-100 font-semibold">20명</span> 소수정예</span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <Star className="w-3 h-3 text-amber-400" />
+          <span>수강생 만족도 <span className="text-slate-100 font-semibold">98%</span></span>
+        </div>
+      </div>
+    </div>
+
+    {/* 오른쪽 일정 카드 (기존과 동일) */}
+    <div className="relative animate-fadeIn hidden lg:block" style={{animationDelay: '0.2s'}}>
+            <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-700/50 p-8 md:p-10 space-y-8 shadow-2xl backdrop-blur-xl hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
             
             {/* 👇 기간 그대로 */}
             <div className="space-y-4 pb-6 border-b border-slate-800/50">
@@ -629,10 +630,10 @@ const instructorReviewImages = [
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>
+    </div>
+  </div>
+</section>
 
   {/* WHY SECTION - 코칭형 부트캠프 차별화 */}
 <section className="py-16 px-6 relative overflow-hidden">

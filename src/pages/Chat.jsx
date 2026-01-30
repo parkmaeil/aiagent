@@ -513,11 +513,11 @@ const instructorReviewImages = [
   </div>
   <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:64px_64px]" />
 
+  {/* 그리드 설정: lg 미만일 때는 자동으로 1열(세로 쌓임), lg 이상일 때만 2열 배치 */}
   <div className="relative mx-auto max-w-6xl grid gap-12 lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] items-center">
     
-    {/* 1. 왼쪽 콘텐츠 - 확실한 중앙 정렬을 위해 w-full 및 mx-auto 적용 */}
+    {/* 1. 왼쪽 콘텐츠 영역 */}
     <div className="flex flex-col items-center justify-center w-full animate-fadeIn text-center">
-      {/* HeroBillboard 자체가 중앙 정렬을 지원해야 합니다 */}
       <div className="w-full mb-6">
         <HeroBillboard />
       </div>
@@ -535,7 +535,7 @@ const instructorReviewImages = [
         으로 배포까지 완성합니다. 기존 VOD 학습자도 환영합니다!
       </p>
 
-      {/* CTA 버튼 그룹 중앙 정렬 보강 */}
+      {/* CTA 버튼 그룹 */}
       <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full justify-center items-center">
         <a
           href="https://forms.gle/t7bKt7AQXpP9aoSp7"
@@ -574,63 +574,63 @@ const instructorReviewImages = [
       </div>
     </div>
 
-    {/* 오른쪽 일정 카드 (기존과 동일) */}
-    <div className="relative animate-fadeIn block lg:col-span-1 w-full lg:w-auto mx-auto lg:mx-0 px-4 sm:px-0 max-w-md lg:max-w-none" style={{animationDelay: '0.2s'}}>
-            <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-700/50 p-8 md:p-10 space-y-8 shadow-2xl backdrop-blur-xl hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
+    {/* 2. 오른쪽 일정 카드 (수정됨: hidden lg:block 제거) */}
+    <div className="relative animate-fadeIn w-full max-w-xl mx-auto" style={{animationDelay: '0.2s'}}>
+      <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-700/50 p-8 md:p-10 space-y-8 shadow-2xl backdrop-blur-xl hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
+        
+        {/* 교육 기간 */}
+        <div className="space-y-4 pb-6 border-b border-slate-800/50 text-center lg:text-left">
+          <div className="space-y-1">
+            <div className="text-sm uppercase tracking-[0.25em] text-slate-400 font-semibold bg-slate-900/50 px-3 py-1 rounded-lg inline-block">
+              교육기간
+            </div>
+            <div className="text-lg md:text-xl font-black text-slate-50 tracking-wide">
+              2026.02.23 ~ 2026.03.30
+            </div>
+          </div>
+          
+          {/* 스케줄 태그: 모바일 대응을 위해 flex-wrap 추가 */}
+          <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+            <div className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/50 text-slate-50 font-semibold shadow-lg hover:shadow-xl hover:shadow-emerald-500/25 hover:scale-105 transition-all cursor-pointer">
+              <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform" />
+              <span className="text-sm font-bold">월/화/목_라이브</span>
+            </div>
+            <div className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-violet-500/20 to-purple-500/20 border border-violet-500/50 text-slate-50 font-semibold shadow-lg hover:shadow-xl hover:shadow-violet-500/25 hover:scale-105 transition-all cursor-pointer">
+              <Terminal className="w-5 h-5 group-hover:scale-110 transition-transform" />
+              <span className="text-sm font-bold">수/금_LAB+COACH</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-700/50 to-transparent my-2" />
+
+        {/* 카운트다운 영역 */}
+        <div className="space-y-4">
+          <div className="flex items-center justify-between">
+            <span className="text-sm uppercase tracking-[0.25em] text-slate-400 font-semibold bg-slate-900/50 px-3 py-1 rounded-lg inline-block">
+              Early Bird 마감
+            </span>
+            <span className="text-sm font-bold text-slate-300">2026.02.10</span>
+          </div>
+          
+          <div className="relative rounded-2xl bg-gradient-to-r from-emerald-500/15 via-teal-500/15 to-violet-500/15 border-2 border-emerald-500/40 p-6 backdrop-blur-md shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
+            <div className="flex items-center justify-between mb-4">
+              <span className="text-sm font-semibold text-slate-200">얼리버드 남은시간</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500/40 to-teal-500/40 border border-emerald-500/50 text-sm font-bold text-emerald-200 shadow-lg animate-pulse">
+                <Zap className="w-4 h-4" />
+                선착순 20명
+              </div>
+            </div>
             
-            {/* 👇 기간 그대로 */}
-            <div className="space-y-4 pb-6 border-b border-slate-800/50">
-              <div className="space-y-1">
-                <div className="text-sm uppercase tracking-[0.25em] text-slate-400 font-semibold bg-slate-900/50 px-3 py-1 rounded-lg inline-block">
-                  교육기간
-                </div>
-                <div className="text-lg md:text-xl font-black text-slate-50 tracking-wide">
-                  2026.02.23 ~ 2026.03.30
-                </div>
-              </div>
-              
-              {/* 👇 스케줄 태그: VOD → LAB/COACH */}
-              <div className="flex items-center justify-center gap-8">
-                <div className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/50 text-slate-50 font-semibold shadow-lg hover:shadow-xl hover:shadow-emerald-500/25 hover:scale-105 transition-all cursor-pointer">
-                  <Calendar className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-                  <span className="text-sm font-bold">월/화/목_라이브</span>
-                </div>
-                <div className="group inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-violet-500/20 to-purple-500/20 border border-violet-500/50 text-slate-50 font-semibold shadow-lg hover:shadow-xl hover:shadow-violet-500/25 hover:scale-105 transition-all cursor-pointer">
-                  <Terminal className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                  <span className="text-sm font-bold">수/금_LAB+COACH</span>
-                </div>
-              </div>
+            <div className="grid grid-cols-4 gap-4">
+              <TimeUnit label="DAYS" value={timeLeft.days} />
+              <TimeUnit label="HRS" value={timeLeft.hours} />
+              <TimeUnit label="MIN" value={timeLeft.minutes} />
+              <TimeUnit label="SEC" value={timeLeft.seconds} />
             </div>
-
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-slate-700/50 to-transparent my-2" />
-
-            {/* 카운트다운 그대로 */}
-            <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-sm uppercase tracking-[0.25em] text-slate-400 font-semibold bg-slate-900/50 px-3 py-1 rounded-lg inline-block">
-                  Early Bird 마감
-                </span>
-                <span className="text-sm font-bold text-slate-300">2026.02.10</span>
-              </div>
-              
-              <div className="relative rounded-2xl bg-gradient-to-r from-emerald-500/15 via-teal-500/15 to-violet-500/15 border-2 border-emerald-500/40 p-6 backdrop-blur-md shadow-xl hover:shadow-2xl hover:scale-[1.02] transition-all duration-300">
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm font-semibold text-slate-200">얼리버드 남은시간</span>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500/40 to-teal-500/40 border border-emerald-500/50 text-sm font-bold text-emerald-200 shadow-lg animate-pulse">
-                    <Zap className="w-4 h-4" />
-                    선착순 20명
-                  </div>
-                </div>
-                
-                <div className="grid grid-cols-4 gap-4">
-                  <TimeUnit label="DAYS" value={timeLeft.days} />
-                  <TimeUnit label="HRS" value={timeLeft.hours} />
-                  <TimeUnit label="MIN" value={timeLeft.minutes} />
-                  <TimeUnit label="SEC" value={timeLeft.seconds} />
-                </div>
-              </div>
-            </div>
-            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

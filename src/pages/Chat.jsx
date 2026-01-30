@@ -1734,20 +1734,20 @@ const instructorReviewImages = [
       </main>
 
       {/* FOOTER */}
-      <footer className="py-12 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
+      <footer className="py-10 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto text-center">
 {/* flex-col로 세로 정렬하고, gap-1로 요소 사이 간격을 좁게 줍니다 */}
 <div className="flex flex-col items-center justify-center text-center mb-4 gap-0">
   
   {/* 1. 로고 이미지 (불필요한 감싸는 div 제거) */}
   <img
-    src="/logo.png"
+    src="/logo2.png"
     alt="이츠코딩 로고"
-    className="h-40 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
+    className="h-28 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
   />
 
   {/* 2. 하단 텍스트 */}
-  <p className="text-slate-500 text-sm font-medium tracking-wider -mt-5 relative z-10">
+  <p className="text-slate-500 text-sm  tracking-wider -mt-7 relative z-10">
     AI AGENT BOOTCAMP 2026
   </p>
   

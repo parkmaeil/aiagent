@@ -1192,7 +1192,7 @@ const instructorReviewImages = [
 
     {/* 메인 프로필 카드 */}
     <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-800 p-8 md:p-10 shadow-2xl">
-      <div className="flex flex-col md:flex-row gap-8 items-start mb-8">
+      <div className="flex flex-col md:flex-row gap-8 items-start mb-5">
         <div className="relative shrink-0 group">
           <div className="absolute -inset-1 bg-gradient-to-r from-[#00c897] via-emerald-300 to-teal-300 rounded-3xl blur opacity-25 group-hover:opacity-5 transition duration-300"></div>
                    <div className="w-40 h-40 md:w-48 md:h-48 rounded-3xl bg-slate-900 overflow-hidden border border-slate-700">
@@ -1227,7 +1227,7 @@ const instructorReviewImages = [
             <span className="text-emerald-400 font-semibold">
               Spring AI & Agent
             </span>{" "}
-            분야를 반영한 실전 커리큘럼을 설계하고 있습니다.
+            분야를 반영한 커리큘럼을 설계하고 있습니다.
           </p>
         </div>
       </div>

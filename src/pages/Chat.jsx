@@ -1629,10 +1629,10 @@ const instructorReviewImages = [
         </span>
       </div>
       <h2 className="text-3xl md:text-5xl font-black text-slate-50 tracking-tight mb-6">
-        이런 분들께<br className="md:hidden"/> <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">특히 추천</span>합니다.
+        이런 분들께<br className="md:hidden"/> <span className="bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">특히 추천</span>
       </h2>
       <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
-        실제 수강생들이 가장 많이 고민했던 내용들,<span className="text-slate-100 font-bold bg-[#00c897]/20 px-3 py-1 rounded-full border border-[#00c897]/30">이츠코딩</span>이 함께 해결합니다.
+        수강생들의 고민을,<span className="text-slate-100 font-bold bg-[#00c897]/20 px-3 py-1 rounded-full border border-[#00c897]/30">이츠코딩</span>과 함께 해결합니다.
       </p>
     </div>
 

@@ -503,7 +503,7 @@ const instructorReviewImages = [
     </div>
   </nav>
 
-  <main className="pt-20">
+<main className="pt-18">
 <section className="relative px-6 pt-10 pb-10 overflow-hidden">
   {/* 배경 레이어 (기존 동일) */}
   <div className="absolute inset-0 overflow-hidden">

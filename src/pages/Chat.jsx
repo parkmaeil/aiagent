@@ -524,7 +524,7 @@ const instructorReviewImages = [
 
       <div className="mb-6 relative inline-block group mx-auto">
         <div className="relative z-10 bg-slate-950/50 backdrop-blur-md border border-emerald-500/30 text-emerald-100 px-8 py-3.5 rounded-[2rem] font-bold text-base md:text-xl shadow-2xl">
-          <span className="text-teal-400">모집중</span> 코칭형 AI Agent Bootcamp
+          <span className="text-teal-400">모집중</span> 코칭형 AI 에이전트 부트캠프
         </div>
         <div className="absolute left-1/2 -translate-x-1/2 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-emerald-500/30 rotate-45 z-0" />
       </div>

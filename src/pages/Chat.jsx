@@ -1747,7 +1747,7 @@ const instructorReviewImages = [
   />
 
   {/* 2. 하단 텍스트 */}
-  <p className="text-slate-500 text-[11px] tracking-widest -mt-7 relative z-10">
+  <p className="text-slate-500 text-[11px] tracking-widest -mt-9 relative z-10">
   AI AGENT BOOTCAMP 2026
 </p>
   

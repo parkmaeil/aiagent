@@ -1582,7 +1582,7 @@ const instructorReviewImages = [
             "6개월 이상의 국비 과정이 부담스러운 분",
             "현업과 학습을 병행할 '압축 로드맵'이 필요한 분"
           ],
-          label: "본질 Opening"
+          label: "< 본질 Opening"
         },
         {
           icon: "💡", 
@@ -1591,7 +1591,7 @@ const instructorReviewImages = [
             "강의는 들었지만 내 프로젝트 적용은 막막한 분", 
             "전문가의 1:1 코드 리뷰와 피드백이 절실한 분"
           ],
-          label: "지능 Intelligence"
+          label: "/ 지능 Intelligence"
         },
         {
           icon: "🚀",
@@ -1600,7 +1600,7 @@ const instructorReviewImages = [
             "단순 코딩을 넘어 AI 에이전트 설계를 원하는 분",
             "MCP와 Spring AI를 실무 수준으로 구현하고 싶은 분"
           ],
-          label: "성장 Growth"
+          label: "> 성장 Growth"
         }
       ].map((item, idx) => (
         <div

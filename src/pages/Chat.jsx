@@ -1759,7 +1759,7 @@ const instructorReviewImages = [
           rel="noreferrer"
           className="group flex-[1.5] inline-flex items-center justify-center gap-3 rounded-2xl bg-[#00c897] hover:bg-[#00e0a9] text-[#050816] px-8 py-5 text-lg font-black shadow-xl shadow-[#00c897]/20 hover:shadow-[#00c897]/40 hover:-translate-y-1 transition-all duration-300"
         >
-          지금 바로 신청하기
+          신청하기
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </a>
         <a

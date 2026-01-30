@@ -525,7 +525,7 @@ const instructorReviewImages = [
       {/* 3. 말풍선 서브 타이틀: 정렬 수정 */}
       <div className="mb-4 relative inline-block group mx-auto">
         <div className="relative z-10 bg-slate-950/50 backdrop-blur-md border border-indigo-500/30 text-indigo-100 px-8 py-3.5 rounded-[2rem] font-bold text-base md:text-xl shadow-2xl">
-          <span className="text-cyan-400">나도!</span> 스프링으로 인공지능을 할 수 있다
+          <span className="text-cyan-400">모집</span> Spring AI Agent Bootcamp
         </div>
         {/* 말풍선 꼬리 위치를 중앙으로 조정 */}
         <div className="absolute left-1/2 -translate-x-1/2 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-indigo-500/30 rotate-45 z-0" />

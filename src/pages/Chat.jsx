@@ -504,7 +504,7 @@ const instructorReviewImages = [
   </nav>
 
   <main className="pt-20">
-<section className="relative px-6 pt-10 pb-15 overflow-hidden">
+<section className="relative px-6 pt-10 pb-10 overflow-hidden">
   {/* 배경 레이어 (기존 동일) */}
   <div className="absolute inset-0 overflow-hidden">
     <div className="absolute -top-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-emerald-500/20 blur-3xl animate-pulse" />

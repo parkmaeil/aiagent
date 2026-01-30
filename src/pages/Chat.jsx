@@ -575,7 +575,7 @@ const instructorReviewImages = [
     </div>
 
     {/* 오른쪽 일정 카드 (기존과 동일) */}
-    <div className="relative animate-fadeIn hidden lg:block" style={{animationDelay: '0.2s'}}>
+    <div className="relative animate-fadeIn block lg:col-span-1" style={{animationDelay: '0.2s'}}>
             <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border border-slate-700/50 p-8 md:p-10 space-y-8 shadow-2xl backdrop-blur-xl hover:shadow-emerald-500/10 hover:border-emerald-500/30 transition-all duration-300">
             
             {/* 👇 기간 그대로 */}

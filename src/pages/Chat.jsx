@@ -1018,7 +1018,7 @@ const instructorReviewImages = [
               <div className="flex-1">
                 <div className="text-sm text-emerald-300 mb-1">Week 5</div>
                 <h3 className="text-xl font-black bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-400 bg-clip-text text-transparent">
-                  최종 프로젝트 마스터피스
+                  최종 프로젝트
                 </h3>
                 <p className="text-sm text-slate-300 mt-1">
                   1:1 코칭으로 완성하는 나만의 AI 에이전트 시스템
@@ -1692,85 +1692,93 @@ const instructorReviewImages = [
           </div>
         </section>
 
-        {/* CTA - 강렬한 그라디언트 */}
-   <section id="register" className="py-20 px-6 relative overflow-hidden">
-  <div className="absolute inset-0 bg-gradient-to-br from-fuchsia-500/10 via-violet-500/10 to-cyan-500/10" />
-  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-fuchsia-900/20 via-transparent to-transparent" />
+ {/* CTA - IT'S CODING 브랜드 동기화 버전 */}
+<section id="register" className="py-20 px-6 relative overflow-hidden">
+  {/* 배경 그라데이션: 브랜드 컬러인 민트/에메랄드 톤으로 변경 */}
+  <div className="absolute inset-0 bg-gradient-to-br from-[#00c897]/5 via-emerald-500/5 to-teal-500/5" />
+  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-emerald-900/10 via-transparent to-transparent" />
   
   <div className="max-w-4xl mx-auto relative">
-    <div className="rounded-3xl bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border-2 border-fuchsia-500/30 p-10 md:p-12 shadow-2xl hover:shadow-fuchsia-500/20 transition-all duration-300">
-      <div className="text-center mb-8">
-        <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-rose-500/20 via-fuchsia-500/20 to-violet-500/20 border border-rose-500/40 px-5 py-2 text-sm text-slate-200 mb-4 shadow-lg">
-          <Flame className="w-4 h-4 text-rose-400 animate-pulse" />
-          선착순 20명 한정 · 얼리버드 40% 할인
-          <Sparkles className="w-4 h-4 text-violet-300" />
+    <div className="rounded-[2.5rem] bg-gradient-to-br from-slate-950/95 via-slate-900/90 to-slate-950/95 border-2 border-[#00c897]/30 p-10 md:p-12 shadow-2xl hover:shadow-[#00c897]/20 transition-all duration-300">
+      
+      <div className="text-center mb-10">
+        {/* 상단 배지: 선착순 및 할인 강조 */}
+        <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-6 py-2 text-sm text-emerald-100 mb-6 shadow-lg backdrop-blur-sm">
+          <Flame className="w-4 h-4 text-orange-400 animate-pulse" />
+          <span className="font-bold">선착순 20명 한정 · 얼리버드 40% 혜택</span>
+          <Sparkles className="w-4 h-4 text-emerald-300" />
         </div>
-        <h2 className="text-2xl md:text-3xl font-black text-slate-50 mb-3">
-          지금 신청하면
+
+        <h2 className="text-3xl md:text-4xl font-black text-slate-50 mb-4 tracking-tight">
+          당신의 영향력을 완성할 <br className="md:hidden" /> 마지막 기회
         </h2>
-        <div className="flex items-center justify-center gap-3 mb-3">
-          <span className="text-lg text-slate-500 line-through">₩500,000</span>
-          <span className="text-3xl md:text-4xl font-black bg-gradient-to-r from-fuchsia-400 via-violet-400 to-cyan-400 bg-clip-text text-transparent">
-            ₩300,000
-          </span>
-          <span className="px-3 py-1 rounded-full bg-gradient-to-r from-rose-500/20 to-fuchsia-500/20 border border-rose-500/40 text-[12px] text-rose-200 font-semibold animate-pulse">
+        
+        {/* 가격 정보: 민트 그라데이션 적용 */}
+        <div className="flex items-center justify-center gap-4 mb-4">
+          <span className="text-xl text-slate-500 line-through decoration-rose-500/50">₩500,000</span>
+          <div className="flex flex-col items-start">
+            <span className="text-4xl md:text-5xl font-black bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+              ₩300,000
+            </span>
+          </div>
+          <span className="px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/40 text-[12px] text-rose-400 font-bold animate-bounce">
             -40% OFF
           </span>
         </div>
-        <p className="text-sm md:text-base text-slate-300">
-          국비 교육 자부담보다 낮은 가격으로{" "}
-          <span className="text-slate-50 font-semibold">
-            5주 완성 AI Agent 부트캠프
-          </span>
-          를 경험해 보세요.
+
+        <p className="text-base md:text-lg text-slate-300 leading-relaxed">
+          일반 강의와는 차원이 다른 <span className="text-[#00c897] font-bold">1:1 밀착 코칭</span> 시스템<br className="hidden md:block" />
+          5주 뒤, 스스로 생각하고 비즈니스를 해결하는 <span className="text-slate-50 font-semibold italic">AI Agent</span>를 소유하세요.
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-3 gap-3 mb-6">
-        <CtaStat icon={<Clock className="w-5 h-5 text-fuchsia-300" />}>
+      {/* 핵심 수치 카드: 가독성 보강 */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+        <div className="flex flex-col items-center p-4 rounded-2xl bg-white/[0.03] border border-white/5 group hover:border-[#00c897]/30 transition-colors">
+          <Clock className="w-6 h-6 text-[#00c897] mb-2 group-hover:scale-110 transition-transform" />
           <span className="font-bold text-slate-50">5주 완성</span>
-          <span className="text-slate-400 text-sm">집중 부트캠프</span>
-        </CtaStat>
-        <CtaStat icon={<Users className="w-5 h-5 text-violet-300" />}>
+          <span className="text-slate-500 text-xs">고밀도 하이브리드 캠프</span>
+        </div>
+        <div className="flex flex-col items-center p-4 rounded-2xl bg-white/[0.03] border border-white/5 group hover:border-[#00c897]/30 transition-colors">
+          <Users className="w-6 h-6 text-emerald-400 mb-2 group-hover:scale-110 transition-transform" />
           <span className="font-bold text-slate-50">선착순 20명</span>
-          <span className="text-slate-400 text-sm">소수정예</span>
-        </CtaStat>
-        <CtaStat icon={<Trophy className="w-5 h-5 text-cyan-300" />}>
+          <span className="text-slate-500 text-xs">1:1 맞춤형 코칭 관리</span>
+        </div>
+        <div className="flex flex-col items-center p-4 rounded-2xl bg-white/[0.03] border border-white/5 group hover:border-[#00c897]/30 transition-colors">
+          <Trophy className="w-6 h-6 text-teal-400 mb-2 group-hover:scale-110 transition-transform" />
           <span className="font-bold text-slate-50">만족도 98%</span>
-          <span className="text-slate-400 text-sm">검증된 강의</span>
-        </CtaStat>
+          <span className="text-slate-500 text-xs">검증된 현업 실무 커리큘럼</span>
+        </div>
       </div>
 
-      {/* 👇 버튼들만 조화로운 색상으로 수정 👇 */}
-      <div className="flex flex-col sm:flex-row gap-3 mb-6">
+      {/* 버튼 영역: 민트 테마와 카카오 노란색의 조화 */}
+      <div className="flex flex-col md:flex-row gap-4 mb-8">
         <a
           href="https://forms.gle/t7bKt7AQXpP9aoSp7"
           target="_blank"
           rel="noreferrer"
-          className="group flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600/90 hover:bg-violet-500/95 text-white px-6 py-3 font-bold shadow-lg shadow-violet-500/30 hover:shadow-xl hover:shadow-violet-500/40 hover:-translate-y-1 transition-all duration-300 ring-1 ring-violet-500/40 hover:ring-violet-400/60"
+          className="group flex-[1.5] inline-flex items-center justify-center gap-3 rounded-2xl bg-[#00c897] hover:bg-[#00e0a9] text-[#050816] px-8 py-5 text-lg font-black shadow-xl shadow-[#00c897]/20 hover:shadow-[#00c897]/40 hover:-translate-y-1 transition-all duration-300"
         >
-          <Trophy className="w-5 h-5" />
-          신청하기
-          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          지금 바로 신청하기
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
         </a>
         <a
           href={KAKAO_CHANNEL_URL}
           target="_blank"
           rel="noreferrer"
-          className="group flex-1 inline-flex items-center justify-center gap-2 rounded-xl bg-amber-400/90 hover:bg-amber-300/95 text-slate-900 px-6 py-3 font-bold shadow-lg shadow-amber-400/40 hover:shadow-xl hover:shadow-amber-400/50 hover:-translate-y-1 transition-all duration-300 ring-1 ring-amber-400/50 hover:ring-amber-300/60"
+          className="group flex-1 inline-flex items-center justify-center gap-3 rounded-2xl bg-[#FEE500] hover:bg-[#ffeb3b] text-[#3C1E1E] px-8 py-5 text-lg font-black shadow-xl shadow-yellow-500/10 hover:-translate-y-1 transition-all duration-300"
         >
-          <MessageCircle className="w-5 h-5" />
-          카카오톡 상담
-          <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <MessageCircle className="w-6 h-6 fill-[#3C1E1E]" />
+          상담하기
         </a>
       </div>
-      {/* 👆 여기까지 👆 */}
 
-      <div className="text-center text-sm text-slate-400 space-y-1">
-        <p className="flex items-center justify-center gap-1.5">              
-          신청서 작성 시 안내 메일을 보내드립니다.
+      <div className="text-center text-xs md:text-sm text-slate-500 space-y-2">
+        <p className="flex items-center justify-center gap-1.5 font-medium"> 
+          <Sparkles className="w-3 h-3 text-[#00c897]" />
+          신청서 작성 완료 시 24시간 이내에 개별 안내 메일을 발송해 드립니다.
         </p>
-        <p>문의/제휴는 카카오톡 채널로 연결됩니다.</p>
+        <p>기업 교육 및 단체 수강 문의는 카카오톡 채널을 이용해 주세요.</p>
       </div>
     </div>
   </div>

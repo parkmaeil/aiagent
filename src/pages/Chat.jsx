@@ -1734,7 +1734,7 @@ const instructorReviewImages = [
       </main>
 
       {/* FOOTER */}
-      <footer className="py-10 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
+      <footer className="py-7 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto text-center">
 {/* flex-col로 세로 정렬하고, gap-1로 요소 사이 간격을 좁게 줍니다 */}
 <div className="flex flex-col items-center justify-center text-center mb-4 gap-0">

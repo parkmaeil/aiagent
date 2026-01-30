@@ -1546,7 +1546,7 @@ const instructorReviewImages = [
         borderColor="border-emerald-500/40"
         iconColor="text-emerald-300"
         day="매주 수(오후) / 금(오후)"
-        time="자율 LAB + 1:1 코칭 (4시간)"
+        time="자율 LAB + 1:1 코칭(자율)"
         detailTitle="구체 일정"
         detailItems={[
           "수요일: LAB 미션 수행 (RAG/MCP 구현)",

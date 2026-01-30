@@ -529,14 +529,14 @@ const instructorReviewImages = [
         <div className="absolute left-1/2 -translate-x-1/2 -top-1.5 w-4 h-4 bg-[#0a0a0f] border-l border-t border-emerald-500/30 rotate-45 z-0" />
       </div>
 
-      <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-10 leading-relaxed mx-auto">
+      <p className="text-[15px] md:text-base text-slate-400 max-w-xl mb-7 leading-relaxed mx-auto">
         Spring AI · RAG · MCP · Multi-Agent 실전 프로젝트를{" "}
         <span className="text-slate-100 font-semibold italic">라이브 + LAB + 1:1 코칭</span>
         으로 배포까지 완성합니다. 기존 VOD 학습자도 환영합니다!
       </p>
 
       {/* CTA 버튼 그룹 */}
-      <div className="flex flex-col sm:flex-row gap-4 mb-8 w-full justify-center items-center">
+      <div className="flex flex-col sm:flex-row gap-4 mb-5 w-full justify-center items-center">
         <a
           href="https://forms.gle/t7bKt7AQXpP9aoSp7"
           target="_blank"

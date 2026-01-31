@@ -43,6 +43,16 @@ import {
 
 const KAKAO_CHANNEL_URL = "https://pf.kakao.com/_xccHmG";
 
+// 브랜드 컬러 & 공통 스타일 상수
+const BRAND = {
+  primary: "#00c897",
+  gradient: "from-[#00c897] to-emerald-400",
+  gradientFull: "from-emerald-500 via-teal-500 to-cyan-500",
+  cardBg: "from-slate-950/95 via-slate-900/90 to-slate-950/95",
+  sectionPadding: "py-16 md:py-20 px-6",
+  titleMargin: "mb-10 md:mb-12",
+};
+
 // 2. 캐러셀 컴포넌트를 만듭니다.
 const HeroBillboard = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -874,116 +884,89 @@ const instructorReviewImages = [
 
 <LearningCycle />
 
-        {/* LEARNING SYSTEM - 사이버펑크 그리드 배경 */}
-        <section className="py-12 px-6 relative overflow-hidden">
-          {/* Cyber Grid Background */}
-          <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e510_1px,transparent_1px),linear-gradient(to_bottom,#4f46e510_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent" />
-          
-          <div className="max-w-6xl mx-auto relative">
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border border-cyan-500/40 px-4 py-1.5 shadow-lg">
-                <Rocket className="w-4 h-4 text-cyan-400" />
-                <span className="text-[12px] font-semibold text-slate-300">
-                  LEARNING SYSTEM
-                </span>
-              </div>
-              <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
-                어떻게 학습이 진행되나요?
-              </h2>
-<p className="mt-2 text-base text-slate-400">
-  주 3회 라이브, 수요일 LAB, 금요일 COACH 세션을 결합한{" "}
-  <span className="text-slate-100 font-semibold">
-    코칭형 부트캠프
-   </span>
-  로 학습합니다.
-</p>
-            </div>
+{/* LEARNING SYSTEM - 브랜드 컬러 통일 버전 */}
+<section className="py-16 md:py-20 px-6 relative overflow-hidden">
+  {/* 배경: cyan → emerald 톤으로 변경 */}
+  <div className="absolute inset-0 bg-[linear-gradient(to_right,#10b98110_1px,transparent_1px),linear-gradient(to_bottom,#10b98110_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 to-transparent" />
+  
+  <div className="max-w-6xl mx-auto relative">
+    <div className="text-center mb-10 md:mb-12">
+      {/* 배지: emerald 톤으로 통일 */}
+      <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-4 py-1.5 shadow-lg">
+        <Rocket className="w-4 h-4 text-emerald-400" />
+        <span className="text-[12px] font-semibold text-slate-300">
+          LEARNING SYSTEM
+        </span>
+      </div>
+      <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
+        어떻게 학습이 진행되나요?
+      </h2>
+      <p className="mt-3 text-base text-slate-400">
+        주 3회 라이브, 수요일 LAB, 금요일 COACH 세션을 결합한{" "}
+        <span className="text-slate-100 font-semibold">코칭형 부트캠프</span>로 학습합니다.
+      </p>
+    </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-              {learningSystem.map((item, i) => (
-                <div
-                  key={i}
-                  className="group rounded-2xl bg-gradient-to-br from-slate-900/90 via-slate-900/70 to-slate-950/90 border border-slate-800 hover:border-cyan-500/50 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/20 backdrop-blur-sm"
-                >
-                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center mb-4 text-cyan-300 group-hover:scale-110 group-hover:rotate-6 transition-all">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-sm font-bold text-slate-50 mb-2">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-slate-400 mb-4 leading-relaxed">
-                    {item.desc}
-                  </p>
-                  <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 px-4 py-2 text-sm text-slate-100 font-semibold">
-                    <Clock className="w-3.5 h-3.5" />
-                    {item.highlight}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* VOD 요약 */}
-            <div className="rounded-2xl bg-gradient-to-br from-slate-950/95 via-violet-950/20 to-slate-950/95 border border-violet-500/30 p-8 shadow-2xl">
-              <div className="flex flex-col md:flex-row gap-6 md:items-center mb-6">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-violet-500/30 to-purple-500/30 border-2 border-violet-500/50 flex items-center justify-center shadow-lg">
-                  <PlayCircle className="w-6 h-6 text-violet-300" />
-                </div>
-                <div>
-                  <h3 className="text-sm font-bold text-slate-50">
-                    프리미엄 VOD 콘텐츠
-                  </h3>
-                  <p className="text-sm text-slate-400">
-                    박매일 강사 인프런 베스트셀러 강의를 커리큘럼에 맞게 선별 제공
-                  </p>
-                </div>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-4">
-                <VodItem
-                  color="text-violet-300"
-                  title="Spring AI 실전 시리즈 (4개 강의)"
-                  desc="총 29시간 37분 분량"
-                />
-                <VodItem
-                  color="text-cyan-300"
-                  title="PZM 백엔드 부트캠프 (선별)"
-                  desc="59시간 46분 중 핵심만"
-                />
-                <VodItem
-                  color="text-pink-300"
-                  title="MVC 프레임워크 나프 시리즈"
-                  desc="54시간 23분 중 핵심만"
-                />
-                <VodItem
-                  color="text-amber-300"
-                  title="DB 모델링 + Java TPC"
-                  desc="49시간 41분 중 핵심만"
-                />
-              </div>
-              
-              <p className="mt-6 text-sm text-slate-400 text-center">
-                총{" "}
-                <span className="text-slate-100 font-bold text-lg">190시간 이상</span>
-                의 프리미엄 콘텐츠 중,{" "}
-                <span className="text-slate-100 font-semibold">코칭 결과에 따라 필요한 파트만</span>
-                을 선별적으로 제공해 드립니다.
-                <br />
-                (과정 수강 중 + 종료 후 3개월까지 학습 가능한 방식으로 안내합니다)
-              </p>
-            </div>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+      {learningSystem.map((item, i) => (
+        <div
+          key={i}
+          className="group rounded-2xl bg-gradient-to-br from-slate-900/90 via-slate-900/70 to-slate-950/90 border border-slate-800 hover:border-emerald-500/50 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-emerald-500/20 backdrop-blur-sm"
+        >
+          {/* 아이콘 박스: cyan → emerald */}
+          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 flex items-center justify-center mb-4 text-emerald-300 group-hover:scale-110 group-hover:rotate-6 transition-all">
+            {item.icon}
           </div>
-        </section>
+          <h3 className="text-sm font-bold text-slate-50 mb-2">
+            {item.title}
+          </h3>
+          <p className="text-sm text-slate-400 mb-4 leading-relaxed">
+            {item.desc}
+          </p>
+          {/* 하이라이트 배지: cyan → emerald */}
+          <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-emerald-500/30 px-4 py-2 text-sm text-slate-100 font-semibold">
+            <Clock className="w-3.5 h-3.5 text-emerald-400" />
+            {item.highlight}
+          </div>
+        </div>
+      ))}
+    </div>
 
- {/* CURRICULUM - 코칭형 부트캠프 커리큘럼 */}
-<section className="py-13 px-6 relative overflow-hidden">
-  {/* 배경 효과 */}
-  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 via-50% to-violet-500/5" />
+    {/* VOD 요약 카드: violet → emerald */}
+    <div className="rounded-2xl bg-gradient-to-br from-slate-950/95 via-emerald-950/20 to-slate-950/95 border border-emerald-500/30 p-8 shadow-2xl">
+      <div className="flex flex-col md:flex-row gap-6 md:items-center mb-6">
+        <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-500 flex items-center justify-center shrink-0 shadow-lg shadow-emerald-500/30">
+          <PlayCircle className="w-7 h-7 text-white" />
+        </div>
+        <div>
+          <h4 className="text-lg md:text-xl font-black text-slate-50">맞춤형 VOD 처방</h4>
+          <p className="text-sm text-slate-400">코칭 결과에 따라 필요한 콘텐츠만 선별 제공</p>
+        </div>
+      </div>
+      <p className="text-sm md:text-base text-slate-300 leading-relaxed">
+        총{" "}
+        <span className="text-slate-100 font-bold text-lg">190시간 이상</span>
+        의 프리미엄 콘텐츠 중,{" "}
+        <span className="text-slate-100 font-semibold">코칭 결과에 따라 필요한 파트만</span>
+        을 선별적으로 제공해 드립니다.
+        <br />
+        <span className="text-emerald-400 text-sm">(과정 수강 중 + 종료 후 3개월까지 학습 가능)</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+{/* CURRICULUM - 여백 및 색상 통일 버전 */}
+<section className="py-16 md:py-20 px-6 relative overflow-hidden">
+  {/* 배경 효과: violet → teal 계열로 */}
+  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-emerald-500/5 via-50% to-teal-500/5" />
   <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/10 via-transparent to-transparent" />
 
   <div className="max-w-6xl mx-auto relative">
-    <div className="text-center mb-10">
-      <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-violet-500/20 border border-emerald-500/40 px-4 py-1.5 shadow-lg">
+    <div className="text-center mb-10 md:mb-12">
+      {/* 배지: emerald/teal 톤 */}
+      <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-emerald-500/20 to-teal-500/20 border border-emerald-500/40 px-4 py-1.5 shadow-lg">
         <Code2 className="w-4 h-4 text-emerald-400" />
         <span className="text-[12px] font-semibold text-slate-300">
           5 WEEKS COACHING BOOTCAMP
@@ -992,9 +975,9 @@ const instructorReviewImages = [
       <h2 className="mt-4 text-2xl md:text-3xl font-black text-slate-50 tracking-tight">
         5주간 어떤 여정을 걷나요?
       </h2>
-      <p className="mt-2 text-base text-slate-400">
+      <p className="mt-3 text-base text-slate-400">
         라이브 + LAB 미션 + 1:1 코칭으로 <span className="text-slate-100 font-semibold">문제 해결 능력</span>을 키우고,{" "}
-        <span className="text-slate-100 font-semibold">개인 맞춤 VOD 처방</span>을 받습니다.
+        <span className="text-emerald-400 font-semibold">개인 맞춤 VOD 처방</span>을 받습니다.
       </p>
     </div>
 
@@ -1069,16 +1052,16 @@ const instructorReviewImages = [
                   <span>LAB + COACH (수/금)</span>
                 </div>
                 {week.lectures.map((lecture, i) => (
-                  <div
-                    key={i}
-                    className="rounded-xl bg-gradient-to-br from-slate-950/90 to-violet-950/20 border border-slate-800 hover:border-emerald-500/30 p-4 hover:shadow-lg hover:shadow-emerald-500/10 transition-all"
-                  >
-                    <p className="text-sm font-semibold text-slate-200 mb-1">{lecture.title}</p>
-                    <p className="flex items-center gap-2 text-sm text-slate-400">
-                      <Clock className="w-3.5 h-3.5" />
-                      {lecture.duration}
-                    </p>
-                  </div>
+      <div
+  key={i}
+  className="rounded-xl bg-gradient-to-br from-slate-950/90 to-emerald-950/20 border border-slate-800 hover:border-emerald-500/30 p-4 hover:shadow-lg hover:shadow-emerald-500/10 transition-all"
+>
+  <p className="text-sm font-semibold text-slate-200 mb-1">{lecture.title}</p>
+  <p className="flex items-center gap-2 text-sm text-slate-400">
+    <Clock className="w-3.5 h-3.5 text-emerald-400" />
+    {lecture.duration}
+  </p>
+</div>
                 ))}
               </div>
 
@@ -1865,87 +1848,89 @@ const instructorReviewImages = [
 
       </main>
 
-      {/* FOOTER */}
-      <footer className="py-7 px-6 border-t border-slate-900 bg-slate-950/80 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto text-center">
-{/* flex-col로 세로 정렬하고, gap-1로 요소 사이 간격을 좁게 줍니다 */}
-<div className="flex flex-col items-center justify-center text-center mb-4 gap-0">
-  
-  {/* 1. 로고 이미지 (불필요한 감싸는 div 제거) */}
-  <img
+  {/* FOOTER - 사업자 정보 포함 버전 */}
+<footer className="py-12 px-6 border-t border-slate-800 bg-slate-950/90 backdrop-blur-sm">
+  <div className="max-w-6xl mx-auto">
+    
+    {/* 상단: 로고 + 간편 링크 */}
+    <div className="flex flex-col items-center text-center mb-8">
+      <img
     src="/logo.png"
     alt="이츠코딩 로고"
     className="h-30 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
   />
+      <p className="text-slate-500 text-[10px] tracking-widest uppercase -mt-4">
+        AI Agent Bootcamp 2026
+      </p>
+    </div>
 
-  {/* 2. 하단 텍스트 */}
-  <p className="text-slate-500 text-[9px] tracking-widest -mt-4 relative z-10">
-  AI AGENT BOOTCAMP 2026
-</p>
-  
-</div>
+    {/* 중간: 빠른 링크 */}
+    <div className="flex items-center justify-center gap-4 md:gap-6 mb-8 text-sm">
+      <a
+        href={KAKAO_CHANNEL_URL}
+        target="_blank"
+        rel="noreferrer"
+        className="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5"
+      >
+        <MessageCircle className="w-4 h-4" />
+        카카오톡 상담
+      </a>
+      <span className="text-slate-700">|</span>
+      <a
+        href="mailto:bitcocom@empas.com"
+        className="text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1.5"
+      >
+        <Mail className="w-4 h-4" />
+        이메일 문의
+      </a>
+    </div>
 
-          <div className="flex items-center justify-center gap-5 mb-6 text-sm">
-            <a
-              href={KAKAO_CHANNEL_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="text-slate-300 hover:text-emerald-300 transition-all duration-200 flex items-center gap-1"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-              카카오톡 상담
-            </a>
-            <span className="text-slate-700">|</span>
-            <a
-              href="mailto:bitcocom@empas.com"
-              className="text-slate-300 hover:text-fuchsia-300 transition-all duration-200 flex items-center gap-1"
-            >
-              <Mail className="w-3.5 h-3.5" />
-              이메일 문의
-            </a>
-          </div>
-
-          <div className="mt-8 pt-6 border-t border-slate-900 text-xs text-slate-500 space-y-2">
-            <div className="flex flex-wrap justify-center gap-x-5 gap-y-1">
-              <span>
-                사업자(대표) : 이츠코딩(박매일)
-              </span>
-              <span className="hidden md:inline text-slate-700">|</span>
-              <span>
-                사업자번호 : <span>485-42-01156</span>
-              </span>
-              <span className="hidden md:inline text-slate-700">|</span>
-              <span>컴퓨터 프로그래밍, 온라인 교육 학원</span>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-x-5 gap-y-1">
-              <span className="flex items-center gap-1.5">
-                <MapPin size={12} className="text-slate-500" />
-                광주 서구 금호동 1110
-              </span>
-              <span className="hidden md:inline text-slate-700">|</span>
-              <span className="flex items-center gap-1.5">
-                <Mail size={12} className="text-slate-500" />
-                <a
-                  href="mailto:bitcocom@empas.com"
-                  className="text-slate-400 hover:text-emerald-300 transition"
-                >
-                  bitcocom@empas.com
-                </a>
-              </span>
-              <span className="hidden md:inline text-slate-700">|</span>
-              <span className="flex items-center gap-1.5">
-                <Phone size={12} className="text-slate-500" />
-                010-7504-1975
-              </span>
-            </div>
-
-            <p className="mt-5 text-slate-600 tracking-[0.25em] uppercase text-[11px] font-semibold">
-              Copyright ⓒ 2022 IT&apos;S CODING.
-            </p>
-          </div>
+    {/* 구분선 */}
+    <div className="border-t border-slate-800/60 pt-8">
+      
+      {/* 사업자 정보 영역 */}
+      <div className="text-center mb-6">
+        <div className="inline-flex flex-col md:flex-row items-center gap-2 md:gap-4 text-[11px] md:text-xs text-slate-500 leading-relaxed">
+          <span className="flex items-center gap-1.5">
+            <span className="text-slate-400 font-semibold">상호명</span>
+            이츠코딩
+          </span>
+          <span className="hidden md:inline text-slate-700">|</span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-slate-400 font-semibold">대표</span>
+            박매일
+          </span>
+          <span className="hidden md:inline text-slate-700">|</span>
+          <span className="flex items-center gap-1.5">
+            <span className="text-slate-400 font-semibold">사업자등록번호</span>
+            485-42-01156
+          </span>
         </div>
-      </footer>
+           <div className="inline-flex flex-col md:flex-row items-center gap-2 md:gap-4 text-[11px] md:text-xs text-slate-500 leading-relaxed mt-2 md:mt-1">
+          <span className="flex items-center gap-1.5">
+            <Phone className="w-3 h-3 text-slate-600" />
+            010-7504-1975
+          </span>
+          <span className="hidden md:inline text-slate-700">|</span>
+          <span className="flex items-center gap-1.5">
+            <Mail className="w-3 h-3 text-slate-600" />
+            bitcocom@empas.com
+          </span>
+          <span className="hidden md:inline text-slate-700">|</span>
+          <span className="flex items-center gap-1.5">
+            <MapPin className="w-3 h-3 text-slate-600" />
+            광주 서구 금호동 1110
+          </span>
+        </div>
+      </div>
+
+      {/* 저작권 */}
+      <p className="text-center text-slate-600 tracking-[0.15em] uppercase text-[10px] font-medium">
+        Copyright ⓒ 2022 IT'S CODING. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
 
       {/* CSS 애니메이션 */}
    {/* CSS 애니메이션 */}

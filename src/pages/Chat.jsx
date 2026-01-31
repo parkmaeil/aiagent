@@ -425,7 +425,7 @@ const instructorReviewImages = [
       ],
       liveTopics: [
         "LLM & Tool Calling 원리",
-        "Spring AI 1.1.3 아키텍처",
+        "Spring AI 1.1.2 아키텍처",
         "첫 AI 에이전트 빌드",
       ],
     },

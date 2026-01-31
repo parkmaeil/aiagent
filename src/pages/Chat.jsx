@@ -127,10 +127,20 @@ return (
 };
 
 const LearningCycle = () => {
+  const [activeStep, setActiveStep] = React.useState(1);
+
+  const getCardStyle = (stepNumber) => {
+    const isActive = activeStep === stepNumber;
+    return `
+      absolute transition-all duration-500 ease-out cursor-pointer
+      ${isActive ? "z-30 scale-105 opacity-100" : "z-10 scale-90 opacity-60 md:opacity-80"}
+    `;
+  };
+
   return (
     <section className="py-20 px-6 relative overflow-hidden bg-slate-950/20">
       <div className="max-w-6xl mx-auto relative">
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-16">
           <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-4 py-1.5 mb-4">
             <Sparkles className="w-4 h-4 text-[#00c897]" />
             <span className="text-[12px] font-bold text-slate-300 uppercase tracking-widest">Growth Engine</span>
@@ -138,74 +148,88 @@ const LearningCycle = () => {
           <h2 className="text-3xl md:text-4xl font-black text-slate-50 tracking-tight">
             순환하는 학습 구조
           </h2>
-          <p className="mt-4 text-slate-400 text-base md:text-lg">
+          <p className="mt-4 text-slate-400 text-sm md:text-lg">
+            <span className="md:hidden text-emerald-400 font-medium mb-2 block">카드를 터치해 자세히 보세요</span>
             강사가 보여주고, 내가 직접 만들고, 함께 고치면서 <span className="text-emerald-400 font-bold">코딩 근육</span>을 키웁니다.
           </p>
         </div>
 
-        {/* 사이클 레이아웃 */}
-        <div className="relative max-w-[850px] mx-auto aspect-square md:aspect-[16/10] flex items-center justify-center">
+        {/* 사이클 레이아웃 컨테이너 */}
+        <div className="relative max-w-[850px] mx-auto h-[500px] md:h-[550px] flex items-center justify-center">
           
           {/* 중앙 배경 원 */}
-          <div className="absolute inset-0 border-2 border-dashed border-emerald-500/10 rounded-full scale-90 hidden md:block" />
+          <div className="absolute inset-0 border-2 border-dashed border-emerald-500/10 rounded-full scale-75 md:scale-90" />
 
           {/* 중심 로고 */}
-          <div className="absolute z-20 text-center bg-[#050816] p-6 rounded-full border border-slate-800 shadow-[0_0_40px_rgba(0,200,151,0.1)]">
-            <div className="text-xl font-black bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+          <div className="absolute z-20 text-center bg-[#050816] p-4 md:p-6 rounded-full border border-slate-800 shadow-[0_0_40px_rgba(0,200,151,0.1)] scale-75 md:scale-100">
+            <div className="text-lg md:text-xl font-black bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
               IT'S CODING
             </div>
-            <div className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">Cycle</div>
+            <div className="text-[9px] text-slate-500 uppercase tracking-[0.3em] font-bold">Cycle</div>
           </div>
 
-          {/* STEP 1: LIVE */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 group z-10">
-            <div className="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 rounded-[2rem] shadow-[0_15px_40px_rgba(16,185,129,0.2)] transform transition-all group-hover:-translate-y-2 border border-white/10">
+          {/* --- 단계별 카드 --- */}
+
+          {/* STEP 1: LIVE (상단 중앙) */}
+          <div 
+            onClick={() => setActiveStep(1)}
+            className={`${getCardStyle(1)} top-0 left-1/2 -translate-x-1/2 w-[280px] md:w-64`}
+          >
+            <div className={`p-6 rounded-[2rem] border transition-all duration-300 ${activeStep === 1 ? 'bg-gradient-to-br from-emerald-500 to-teal-600 border-white/20 shadow-[0_15px_40px_rgba(16,185,129,0.3)]' : 'bg-slate-900 border-slate-800'}`}>
               <div className="flex justify-center mb-3">
-                <div className="p-3 bg-white/10 rounded-2xl backdrop-blur-md">
-                   <Video className="w-6 h-6 text-white" />
+                <div className={`p-3 rounded-2xl ${activeStep === 1 ? 'bg-white/10' : 'bg-emerald-500/10'}`}>
+                   <Video className={`w-6 h-6 ${activeStep === 1 ? 'text-white' : 'text-emerald-400'}`} />
                 </div>
               </div>
-              <div className="text-white/60 text-[10px] font-black tracking-[0.2em] mb-1 text-center">STEP 01</div>
-              <div className="text-white text-2xl font-black mb-1 text-center">LIVE</div>
-              <p className="text-emerald-100/80 text-xs leading-relaxed text-center font-medium">
+              <div className={`${activeStep === 1 ? 'text-white/60' : 'text-emerald-500/60'} text-[10px] font-black tracking-[0.2em] mb-1 text-center`}>STEP 01</div>
+              <div className={`${activeStep === 1 ? 'text-white' : 'text-emerald-50'} text-xl md:text-2xl font-black mb-1 text-center`}>LIVE</div>
+              <p className={`${activeStep === 1 ? 'text-emerald-100/80' : 'text-slate-400'} text-xs leading-relaxed text-center font-medium`}>
                 강사의 실시간 코딩 데모와<br />핵심 개념의 본질 파악
               </p>
             </div>
           </div>
 
-          {/* STEP 2: LAB */}
-          <div className="absolute bottom-0 left-0 md:left-[5%] w-64 group z-10">
-            <div className="bg-gradient-to-br from-slate-900 to-slate-950 p-6 rounded-[2rem] shadow-xl border border-emerald-500/30 transform transition-all group-hover:-translate-y-2">
+          {/* STEP 2: LAB (하단 좌측) */}
+          <div 
+            onClick={() => setActiveStep(2)}
+            // 모바일: 중앙에서 왼쪽으로 살짝 이동(-90%), 데스크탑: 왼쪽 끝(0%)
+            className={`${getCardStyle(2)} bottom-4 md:bottom-0 left-1/2 md:left-0 -translate-x-[92%] md:translate-x-0 w-[280px] md:w-64`}
+          >
+            <div className={`p-6 rounded-[2rem] border transition-all duration-300 ${activeStep === 2 ? 'bg-gradient-to-br from-emerald-500 to-teal-600 border-white/20 shadow-[0_15px_40px_rgba(16,185,129,0.3)]' : 'bg-slate-900 border-slate-800'}`}>
               <div className="flex justify-center mb-3">
-                <div className="p-3 bg-emerald-500/10 rounded-2xl">
-                   <Terminal className="w-6 h-6 text-emerald-400" />
+                <div className={`p-3 rounded-2xl ${activeStep === 2 ? 'bg-white/10' : 'bg-emerald-500/10'}`}>
+                   <Terminal className={`w-6 h-6 ${activeStep === 2 ? 'text-white' : 'text-emerald-400'}`} />
                 </div>
               </div>
-              <div className="text-emerald-500/60 text-[10px] font-black tracking-[0.2em] mb-1 text-center">STEP 02</div>
-              <div className="text-emerald-50 text-2xl font-black mb-1 text-center">LAB</div>
-              <p className="text-slate-400 text-xs leading-relaxed text-center">
+              <div className={`${activeStep === 2 ? 'text-white/60' : 'text-emerald-500/60'} text-[10px] font-black tracking-[0.2em] mb-1 text-center`}>STEP 02</div>
+              <div className={`${activeStep === 2 ? 'text-white' : 'text-emerald-50'} text-xl md:text-2xl font-black mb-1 text-center`}>LAB</div>
+              <p className={`${activeStep === 2 ? 'text-emerald-100/80' : 'text-slate-400'} text-xs leading-relaxed text-center font-medium`}>
                 제공된 미션을 스스로 해결하며<br />손에 익히는 실전 실습
               </p>
             </div>
           </div>
 
-          {/* STEP 3: COACH */}
-          <div className="absolute bottom-0 right-0 md:right-[5%] w-64 group z-10">
-            <div className="bg-gradient-to-br from-slate-900 to-slate-950 p-6 rounded-[2rem] shadow-xl border border-emerald-500/30 transform transition-all group-hover:-translate-y-2">
+          {/* STEP 3: COACH (하단 우측) */}
+          <div 
+            onClick={() => setActiveStep(3)}
+            // 모바일: 중앙에서 오른쪽으로 살짝 이동(-8%), 데스크탑: 오른쪽 끝(100%에서 카드넓이만큼 이동)
+            className={`${getCardStyle(3)} bottom-4 md:bottom-0 left-1/2 md:left-auto md:right-0 -translate-x-[8%] md:translate-x-0 w-[280px] md:w-64`}
+          >
+            <div className={`p-6 rounded-[2rem] border transition-all duration-300 ${activeStep === 3 ? 'bg-gradient-to-br from-emerald-500 to-teal-600 border-white/20 shadow-[0_15px_40px_rgba(16,185,129,0.3)]' : 'bg-slate-900 border-slate-800'}`}>
               <div className="flex justify-center mb-3">
-                <div className="p-3 bg-emerald-500/10 rounded-2xl">
-                   <Users2 className="w-6 h-6 text-emerald-400" />
+                <div className={`p-3 rounded-2xl ${activeStep === 3 ? 'bg-white/10' : 'bg-emerald-500/10'}`}>
+                   <Users2 className={`w-6 h-6 ${activeStep === 3 ? 'text-white' : 'text-emerald-400'}`} />
                 </div>
               </div>
-              <div className="text-emerald-500/60 text-[10px] font-black tracking-[0.2em] mb-1 text-center">STEP 03</div>
-              <div className="text-emerald-50 text-2xl font-black mb-1 text-center">COACH</div>
-              <p className="text-slate-400 text-xs leading-relaxed text-center">
+              <div className={`${activeStep === 3 ? 'text-white/60' : 'text-emerald-500/60'} text-[10px] font-black tracking-[0.2em] mb-1 text-center`}>STEP 03</div>
+              <div className={`${activeStep === 3 ? 'text-white' : 'text-emerald-50'} text-xl md:text-2xl font-black mb-1 text-center`}>COACH</div>
+              <p className={`${activeStep === 3 ? 'text-emerald-100/80' : 'text-slate-400'} text-xs leading-relaxed text-center font-medium`}>
                 1:1 코드 리뷰를 통한 교정 및<br />개인별 맞춤형 VOD 처방
               </p>
             </div>
           </div>
 
-          {/* 화살표들 (데스크탑) */}
+          {/* 화살표 애니메이션 (데스크탑에서만 노출) */}
           <div className="absolute top-[35%] left-[18%] text-[#00c897]/20 animate-pulse hidden md:block -rotate-[135deg]">
             <ArrowBigRight size={48} fill="currentColor" />
           </div>
@@ -217,12 +241,12 @@ const LearningCycle = () => {
           </div>
         </div>
 
-        <div className="mt-20 text-center">
+        <div className="mt-12 md:mt-20 text-center">
           <div className="inline-block px-8 py-4 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-sm">
-            <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+            <p className="text-slate-400 text-sm md:text-base leading-relaxed font-medium">
               단순히 듣기만 하는 강의가 아닙니다. <br className="md:hidden" />
-              <span className="text-emerald-400 font-bold">LIVE → LAB → COACH</span>로 이어지는 이 사이클은 <br className="hidden md:block" />
-              여러분의 지식을 <span className="text-white font-bold text-lg">실행 가능한 기술</span>로 바꾸는 가장 빠른 방법입니다.
+              <span className="text-emerald-400 font-bold underline underline-offset-4 decoration-emerald-500/30">LIVE → LAB → COACH</span>로 이어지는 이 사이클은 <br className="hidden md:block" />
+              지식을 <span className="text-white font-bold text-lg">실행 가능한 기술</span>로 바꾸는 가장 빠른 방법입니다.
             </p>
           </div>
         </div>

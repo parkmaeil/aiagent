@@ -10,6 +10,7 @@ import {
   ListChecks,
   MessageCircle,
   Mail,
+  ArrowBigRight,
   GraduationCap,
   HelpCircle,
   Sparkles,
@@ -122,6 +123,111 @@ return (
         ))}
       </div>
     </div>
+  );
+};
+
+const LearningCycle = () => {
+  return (
+    <section className="py-20 px-6 relative overflow-hidden bg-slate-950/20">
+      <div className="max-w-6xl mx-auto relative">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-4 py-1.5 mb-4">
+            <Sparkles className="w-4 h-4 text-[#00c897]" />
+            <span className="text-[12px] font-bold text-slate-300 uppercase tracking-widest">Growth Engine</span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black text-slate-50 tracking-tight">
+            순환하는 학습 구조
+          </h2>
+          <p className="mt-4 text-slate-400 text-base md:text-lg">
+            강사가 보여주고, 내가 직접 만들고, 함께 고치면서 <span className="text-emerald-400 font-bold">코딩 근육</span>을 키웁니다.
+          </p>
+        </div>
+
+        {/* 사이클 레이아웃 */}
+        <div className="relative max-w-[850px] mx-auto aspect-square md:aspect-[16/10] flex items-center justify-center">
+          
+          {/* 중앙 배경 원 */}
+          <div className="absolute inset-0 border-2 border-dashed border-emerald-500/10 rounded-full scale-90 hidden md:block" />
+
+          {/* 중심 로고 */}
+          <div className="absolute z-20 text-center bg-[#050816] p-6 rounded-full border border-slate-800 shadow-[0_0_40px_rgba(0,200,151,0.1)]">
+            <div className="text-xl font-black bg-gradient-to-r from-[#00c897] to-emerald-400 bg-clip-text text-transparent">
+              IT'S CODING
+            </div>
+            <div className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-bold">Cycle</div>
+          </div>
+
+          {/* STEP 1: LIVE */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 group z-10">
+            <div className="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 rounded-[2rem] shadow-[0_15px_40px_rgba(16,185,129,0.2)] transform transition-all group-hover:-translate-y-2 border border-white/10">
+              <div className="flex justify-center mb-3">
+                <div className="p-3 bg-white/10 rounded-2xl backdrop-blur-md">
+                   <Video className="w-6 h-6 text-white" />
+                </div>
+              </div>
+              <div className="text-white/60 text-[10px] font-black tracking-[0.2em] mb-1 text-center">STEP 01</div>
+              <div className="text-white text-2xl font-black mb-1 text-center">LIVE</div>
+              <p className="text-emerald-100/80 text-xs leading-relaxed text-center font-medium">
+                강사의 실시간 코딩 데모와<br />핵심 개념의 본질 파악
+              </p>
+            </div>
+          </div>
+
+          {/* STEP 2: LAB */}
+          <div className="absolute bottom-0 left-0 md:left-[5%] w-64 group z-10">
+            <div className="bg-gradient-to-br from-slate-900 to-slate-950 p-6 rounded-[2rem] shadow-xl border border-emerald-500/30 transform transition-all group-hover:-translate-y-2">
+              <div className="flex justify-center mb-3">
+                <div className="p-3 bg-emerald-500/10 rounded-2xl">
+                   <Terminal className="w-6 h-6 text-emerald-400" />
+                </div>
+              </div>
+              <div className="text-emerald-500/60 text-[10px] font-black tracking-[0.2em] mb-1 text-center">STEP 02</div>
+              <div className="text-emerald-50 text-2xl font-black mb-1 text-center">LAB</div>
+              <p className="text-slate-400 text-xs leading-relaxed text-center">
+                제공된 미션을 스스로 해결하며<br />손에 익히는 실전 실습
+              </p>
+            </div>
+          </div>
+
+          {/* STEP 3: COACH */}
+          <div className="absolute bottom-0 right-0 md:right-[5%] w-64 group z-10">
+            <div className="bg-gradient-to-br from-slate-900 to-slate-950 p-6 rounded-[2rem] shadow-xl border border-emerald-500/30 transform transition-all group-hover:-translate-y-2">
+              <div className="flex justify-center mb-3">
+                <div className="p-3 bg-emerald-500/10 rounded-2xl">
+                   <Users2 className="w-6 h-6 text-emerald-400" />
+                </div>
+              </div>
+              <div className="text-emerald-500/60 text-[10px] font-black tracking-[0.2em] mb-1 text-center">STEP 03</div>
+              <div className="text-emerald-50 text-2xl font-black mb-1 text-center">COACH</div>
+              <p className="text-slate-400 text-xs leading-relaxed text-center">
+                1:1 코드 리뷰를 통한 교정 및<br />개인별 맞춤형 VOD 처방
+              </p>
+            </div>
+          </div>
+
+          {/* 화살표들 (데스크탑) */}
+          <div className="absolute top-[35%] left-[18%] text-[#00c897]/20 animate-pulse hidden md:block -rotate-[135deg]">
+            <ArrowBigRight size={48} fill="currentColor" />
+          </div>
+          <div className="absolute bottom-[8%] left-1/2 -translate-x-1/2 text-[#00c897]/20 animate-pulse hidden md:block">
+            <ArrowBigRight size={48} fill="currentColor" />
+          </div>
+          <div className="absolute top-[35%] right-[18%] text-[#00c897]/20 animate-pulse hidden md:block -rotate-45">
+            <ArrowBigRight size={48} fill="currentColor" />
+          </div>
+        </div>
+
+        <div className="mt-20 text-center">
+          <div className="inline-block px-8 py-4 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-sm">
+            <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+              단순히 듣기만 하는 강의가 아닙니다. <br className="md:hidden" />
+              <span className="text-emerald-400 font-bold">LIVE → LAB → COACH</span>로 이어지는 이 사이클은 <br className="hidden md:block" />
+              여러분의 지식을 <span className="text-white font-bold text-lg">실행 가능한 기술</span>로 바꾸는 가장 빠른 방법입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -736,6 +842,7 @@ const instructorReviewImages = [
   </div>
 </section>
 
+<LearningCycle />
 
         {/* LEARNING SYSTEM - 사이버펑크 그리드 배경 */}
         <section className="py-16 px-6 relative overflow-hidden">

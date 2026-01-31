@@ -138,7 +138,7 @@ const LearningCycle = () => {
   };
 
   return (
-    <section className="py-20 px-4 relative overflow-hidden bg-slate-950/20">
+    <section className="py-18 px-4 relative overflow-hidden bg-slate-950/20">
       <div className="max-w-6xl mx-auto relative">
         <div className="text-center mb-8 md:mb-16">
           <div className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 border border-[#00c897]/40 px-4 py-1.5 mb-4">
@@ -875,7 +875,7 @@ const instructorReviewImages = [
 <LearningCycle />
 
         {/* LEARNING SYSTEM - 사이버펑크 그리드 배경 */}
-        <section className="py-16 px-6 relative overflow-hidden">
+        <section className="py-12 px-6 relative overflow-hidden">
           {/* Cyber Grid Background */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f46e510_1px,transparent_1px),linear-gradient(to_bottom,#4f46e510_1px,transparent_1px)] bg-[size:4rem_4rem]" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-500/5 to-transparent" />

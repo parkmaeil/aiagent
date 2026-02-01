@@ -1663,7 +1663,7 @@ const ItsCodingOfficial = () => {
                 이런 분들께<br className="md:hidden"/> <span className="bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent">특히 추천</span>
               </h2>
               <p className="text-base md:text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
-                수강생들의 고민을,<span className="text-slate-700 font-bold bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">이츠코딩</span>과 함께 해결합니다.
+                수강생들의 고민 <span className="text-slate-700 font-bold bg-emerald-100 px-3 py-1 rounded-full border border-emerald-200">이츠코딩</span>과 함께 해결합니다.
               </p>
             </div>
 

@@ -61,7 +61,7 @@ const HeroBillboard = () => {
     {
       badge: "국비 6개월 과정을 5주로 압축한 비대면 부트캠프",
       badgeIcon: <Flame className="w-4 h-4 text-rose-500 animate-pulse" />,
-      titleLine1: "1️⃣ 5주 만에 완성하는",
+      titleLine1: "5주 만에 완성하는",
       titleLine2: "AI 에이전트 부트캠프",
       titleLine3: "Spring AI와 MCP로 구축하는 현업 수준의 지능형 시스템",
       gradient: "from-fuchsia-500 via-violet-500 to-cyan-500"
@@ -69,7 +69,7 @@ const HeroBillboard = () => {
     {
       badge: "현업 실무형 Multi-Agent 오케스트레이션",
       badgeIcon: <Sparkles className="w-4 h-4 text-amber-500" />,
-      titleLine1: "2️⃣ Spring AI로 구축하는",
+      titleLine1: "Spring AI로 구축하는",
       titleLine2: "지능형 에이전트 시스템",
       titleLine3: "복잡한 비즈니스 로직을 스스로 해결하는 멀티 에이전트 설계",
       gradient: "from-emerald-500 via-teal-500 to-cyan-500"
@@ -77,7 +77,7 @@ const HeroBillboard = () => {
     {
       badge: "Anthropic MCP 프로토콜 완벽 가이드",
       badgeIcon: <Rocket className="w-4 h-4 text-blue-500" />,
-      titleLine1: "3️⃣ 차세대 AI 표준",
+      titleLine1: "차세대 AI 표준",
       titleLine2: "MCP 마스터 클래스",
       titleLine3: "모든 AI 도구를 하나로 연결하는 새로운 인터페이스 표준 학습",
       gradient: "from-blue-500 via-indigo-500 to-violet-500"
@@ -355,7 +355,7 @@ const ItsCodingOfficial = () => {
     {
       icon: <TrendingUp className="w-5 h-5" />,
       title: "Spring AI 최신 트렌드 반영",
-      desc: "Spring AI 1.1.3, Agentic Patterns, MCP",
+      desc: "Spring AI 1.1.2, Agentic Patterns, MCP",
     },
     {
       icon: <Shield className="w-5 h-5" />,
@@ -806,8 +806,7 @@ const ItsCodingOfficial = () => {
             <div className="relative flex items-center justify-between mb-4">
               <span className="text-sm font-semibold text-slate-600">얼리버드 남은시간</span>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-sm font-bold text-white shadow-lg animate-pulse">
-                <Zap className="w-4 h-4" />
-                선착순 20명
+                <Zap className="w-4 h-4"/>선착순20명
               </div>
             </div>
 
@@ -1410,19 +1409,19 @@ const ItsCodingOfficial = () => {
                   <div className="inline-flex items-center justify-center gap-3 md:gap-8 px-8 py-4 rounded-[2rem] bg-slate-50 border border-slate-200 shadow-inner">
                     <div className="flex items-center gap-2 group/val">
                       <span className="text-emerald-500 font-black text-lg md:text-xl">&lt;</span>
-                      <span className="text-slate-700 font-bold text-sm md:text-base group-hover/val:text-emerald-600 transition-colors">본질</span>
+                      <span className="text-slate-700 font-bold text-sm md:text-base group-hover/val:text-emerald-600 transition-colors">본질(O)</span>
                       <span className="hidden sm:inline text-slate-400 text-[10px] uppercase tracking-widest font-medium">Opening</span>
                     </div>
                     <div className="text-slate-200 font-thin text-xl">|</div>
                     <div className="flex items-center gap-2 group/val">
                       <span className="text-emerald-500 font-black text-lg md:text-xl">/</span>
-                      <span className="text-slate-700 font-bold text-sm md:text-base group-hover/val:text-emerald-600 transition-colors">지능</span>
+                      <span className="text-slate-700 font-bold text-sm md:text-base group-hover/val:text-emerald-600 transition-colors">지능(I)</span>
                       <span className="hidden sm:inline text-slate-400 text-[10px] uppercase tracking-widest font-medium">Intelligence</span>
                     </div>
                     <div className="text-slate-200 font-thin text-xl">|</div>
                     <div className="flex items-center gap-2 group/val">
                       <span className="text-emerald-500 font-black text-lg md:text-xl">&gt;</span>
-                      <span className="text-slate-700 font-bold text-sm md:text-base group-hover/val:text-emerald-600 transition-colors">성장</span>
+                      <span className="text-slate-700 font-bold text-sm md:text-base group-hover/val:text-emerald-600 transition-colors">성장(G)</span>
                       <span className="hidden sm:inline text-slate-400 text-[10px] uppercase tracking-widest font-medium">Growth</span>
                     </div>
                   </div>

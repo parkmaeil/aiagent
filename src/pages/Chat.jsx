@@ -806,7 +806,7 @@ const ItsCodingOfficial = () => {
             <div className="relative flex items-center justify-between mb-4">
               <span className="text-sm font-semibold text-slate-600">얼리버드 남은시간</span>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 text-sm font-bold text-white shadow-lg animate-pulse">
-                <Zap className="w-4 h-4"/>선착순20명
+                <Zap className="w-4 h-4"/>선착순 20명
               </div>
             </div>
 

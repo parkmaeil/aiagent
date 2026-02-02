@@ -494,7 +494,7 @@ const ItsCodingOfficial = () => {
       items: [
         "LLM 기초와 프롬프트 엔지니어링: 토큰, 컨텍스트 윈도우, Zero-shot/Few-shot 및 프롬프트 템플릿.",
         "AI Agent의 이해: 단순 LLM vs 에이전트, 인지 → 계획 → 행동 → 관찰 루프.",
-        "Spring AI 1.1.3 아키텍처: ChatModel, EmbeddingModel, VectorStore, PSA 개념 이해.",
+        "Spring AI 1.1.2 아키텍처: ChatModel, EmbeddingModel, VectorStore, PSA 개념 이해.",
         "Spring AI 환경 설정: Spring Boot 프로젝트, OpenAI/Claude API 연동, ChatClient Fluent API.",
         "Tool Calling 원리: Function Calling 메커니즘, JSON 스키마 설계 포인트.",
         "실습: 날씨 API 등 간단한 도구를 호출하는 첫 번째 AI 에이전트 구현."
@@ -706,6 +706,7 @@ const ItsCodingOfficial = () => {
       {/* 설명 텍스트 - 키워드 강조 */}
       <p className="text-[15px] md:text-base text-slate-500 max-w-xl mb-7 leading-relaxed mx-auto">
         <span className="inline-flex items-center gap-1 text-emerald-600 font-semibold">Spring AI</span> · 
+         <span className="inline-flex items-center gap-1 text-teal-600 font-semibold">Tool Calling</span> ·
         <span className="inline-flex items-center gap-1 text-teal-600 font-semibold">RAG</span> · 
         <span className="inline-flex items-center gap-1 text-cyan-600 font-semibold">MCP</span> · 
         <span className="inline-flex items-center gap-1 text-violet-600 font-semibold">Multi-Agent</span> 실전 프로젝트를{" "}

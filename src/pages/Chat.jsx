@@ -602,7 +602,7 @@ const ItsCodingOfficial = () => {
             <img
     src="/logo4.png" // public 폴더에 있는 로고 이미지 경로
     alt="이츠코딩 로고" // 필수 대체 텍스트
-    className="h-10 w-auto object-contain" // 높이 설정 (h-8 ~ h-12 추천)
+    className="h-9 w-auto object-contain" // 높이 설정 (h-8 ~ h-12 추천)
   />
 
           </div>
@@ -1887,10 +1887,10 @@ const ItsCodingOfficial = () => {
             <img
     src="/logo.png"
     alt="이츠코딩 로고"
-    className="h-30 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
+    className="h-17 w-auto object-contain" // h-40은 매우 큽니다. 필요시 h-24 등으로 조절하세요.
   />
 
-            <p className="text-slate-400 text-[10px] tracking-widest uppercase -mt-4">
+            <p className="text-slate-400 text-[10px] tracking-widest uppercase -mt+3">
               AI Agent Bootcamp 2026
             </p>
           </div>

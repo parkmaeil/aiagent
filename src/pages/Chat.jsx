@@ -111,7 +111,7 @@ const HeroBillboard = () => {
           </div>
 
           {/* 메인 제목 */}
-          <h1 className="text-[24px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-800 leading-tight text-center">
+          <h1 className="text-[25px] md:text-4xl lg:text-5xl font-black tracking-tighter text-slate-800 leading-tight text-center">
             {item.titleLine1} <br />
             <span className={`bg-gradient-to-r ${item.gradient} bg-clip-text text-transparent animate-gradient`}>
               {item.titleLine2}

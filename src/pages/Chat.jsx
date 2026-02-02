@@ -600,9 +600,9 @@ const ItsCodingOfficial = () => {
           {/* 상단 헤더 로고 영역 */}
           <div className="flex items-left justify-center">
             <img
-    src="/logo2.png" // public 폴더에 있는 로고 이미지 경로
+    src="/logo4.png" // public 폴더에 있는 로고 이미지 경로
     alt="이츠코딩 로고" // 필수 대체 텍스트
-    className="h-25 w-auto object-contain" // 높이 설정 (h-8 ~ h-12 추천)
+    className="h-10 w-auto object-contain" // 높이 설정 (h-8 ~ h-12 추천)
   />
 
           </div>

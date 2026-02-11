@@ -304,7 +304,7 @@ const ItsCodingOfficial = () => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
 
-    const targetDate = new Date("2026-02-10T23:59:59").getTime();
+    const targetDate = new Date("2026-02-20T23:59:59").getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -797,7 +797,7 @@ const ItsCodingOfficial = () => {
             <span className="text-sm uppercase tracking-[0.25em] text-slate-400 font-semibold bg-slate-50 px-3 py-1 rounded-lg inline-block">
               Early Bird 마감
             </span>
-            <span className="text-sm font-bold text-rose-500">2026.02.10</span>
+            <span className="text-sm font-bold text-rose-500">2026.02.20</span>
           </div>
 
           <div className="relative rounded-2xl bg-gradient-to-r from-emerald-50 via-teal-50 to-cyan-50 border-2 border-emerald-200 p-6 shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 overflow-hidden">
